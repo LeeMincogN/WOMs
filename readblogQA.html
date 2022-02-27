@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE OR ME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/readblogQA_style.css">
+    <link rel="stylesheet" href="./assets/css/blog-detail_style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/icons8-pen-100.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&amp;family=Playfair+Display:wght@100;200;300;400;500;600;700&amp;family=Overpass:wght@200;300;400;600;700&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="pyro"><div class="before"></div><div class="after"></div></div>
+    
+
+<!-- Hiệu ứng tuyết rơi -->
+<style>
+    @-webkit-keyframes
+      snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes
+      snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes
+      snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes
+      snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{color:rgb(207, 190, 190);position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s} </style>
+    <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake" style="font-size: 30px;">❅</div>
+    <div class="snowflake" style="font-size: 40px;">❆ </div>
+    <div class="snowflake" style="font-size: 30px;">❆</div>
+    <div class="snowflake" style="font-size: 22px;">❅</div>
+    <div class="snowflake" style="font-size: 50px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❅</div>
+    <div class="snowflake" style="font-size: 70px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❆</div>
+    </div>
+
+    <!-- Audio -->
+    <audio class="musicblog1" src="./assets/music/blogQA/blog1.mp3" loop></audio>
+    <audio class="musicblog2" src="./assets/music/blogQA/blog2.mp3" loop></audio>
+    <audio class="musicblog6" src="./assets/music/blogQA/blog6.mp3" loop></audio>
+
+
+
+
+
+    <div class="app">
+        <div class="wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="header__nav">
+                    <i onclick="navlist_open()" class="nav-icon fas fa-bars"></i>
+                    <!-- <span class="nav-name">WE OR ME</span> -->
+                    <i onclick="form_open()" class="nav-icon__user fas fa-user-circle"></i>
+                </div>
+                <div class="navlist">
+                    <i onclick="navlist_close()" class="navlist-icon far fa-times-circle"></i>
+                    <ul class="navlist-wrap">
+                        <li class="navlist-item"><a href="./index.html">HOME</a></li>
+                        <li class="navlist-item"><a href="./readblog.html">BLOG</a></li>
+                        <li class="navlist-item"><a href="./about.html">ABOUT</a></li>
+                        <li class="navlist-item"><a href="./contact.html">CONTACT</a></li>
+                        <li class="navlist-item"><a href="./update.html">UPDATE <i class="fas fa-exclamation-circle"></i></a></li>
+                        <!-- <i class="fas fa-exclamation-circle"></i> -->
+
+                    </ul>
+                </div>
+
+                <!-- Form user -->
+                <div class="form__user">
+                    <div class="form__user-overlay">
+
+                        <div class="form__user-body">
+                            <!-- form login -->
+                            <div class="form__user-login">
+                                <div class="form__user-header">
+                                    <div class="form__user-heading">Đăng Nhập</div>
+                                    <span onclick="form_registeropen()" class="form__user-switch-btn">Đăng Ký</span>
+                                </div>
+                                <div class="form__user-form">
+                                    <form action="">
+                                        <input required class="form__user-info" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                        <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                        <p>Quên Mật Khẩu</p>
+                                        <span onclick="form_close()">Trở Lại</span>
+                                        <button type="submit">Đăng Nhập</button>
+                                    </form>
+                                </div>
+                                <div class="form__user-footer">
+                                    <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook
+                                    </a>
+                                    <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                        <i class="fab fa-google"></i>
+                                        Google
+                                    </a>
+                                    <div class="form__user-link">
+                                        <i class="fas fa-comment-dots"></i>
+                                        SMS
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- form logout -->
+                            <div class="form__user-logout">
+                                <div class="form__user-header">
+                                    <div class="form__user-heading">Đăng Ký</div>
+                                    <span onclick="form_loginopen()" class="form__user-switch-btn">Đăng Nhập</span>
+                                </div>
+                                <div class="form__user-form">
+                                    <form action="">
+                                        <input required class="form__user-info" type="text" placeholder="Số điện thoại">
+                                        <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                        <input required class="form__user-info" type="password" placeholder="Xác Nhận Lại Mật khẩu">
+
+                                        <p class="form__user-policy">Bằng việc đăng kí, bạn đã đồng ý với WE OR ME về <label>Điều khoản dịch vụ</label> & <label>Chính sách bảo mật</label></p>
+                                        <span onclick="form_registerclose()">Trở Lại</span>
+                                        <button type="submit">Đăng Ký</button>
+                                    </form>
+                                </div>
+                                <div class="form__user-footer">
+                                    <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Kết nối với Facebook
+                                    </a>
+                                    <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                        <i class="fab fa-google"></i>
+                                        Kết nối với Google
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+    
+                <div class="header__title">
+                    <span style="font-family: Playfair Display, serif;">My Blog</span>
+                    <p class="header__title-text">Chào mừng đến với blog của <b class="header__title-text-name"></b></p>
+                </div>
+            </div>
+
+
+            <video src="./assets/video/intro QA.mp4" playsinline autoplay muted width="100%" style="margin-bottom: 16px;" loop></video>
+
+
+            <!-- Category -->
+            <div class="category">
+                <ul class="category__wrap">
+                    <li class="category__item"><a href="./readblog.html">STUDY</a></li>
+                    <li class="category__item"><a href="./readblogWOMs.html">WOMs</a></li>
+                    <li class="category__item"><a href="./readblogWomusic.html">WMusic</a></li>
+                    <li class="category__item"><a href="./readblogQA.html">Q&A</a></li>
+                    <li class="category__item"><a href="./readblogVideos.html">Videos Tutorial</a></li>
+
+                </ul>
+            </div>
+    
+            <!-- Body -->
+            <div class="body">
+                <div class="wrap-content">
+                    <div class="blog__content-left col-8 col-12-s">
+                        
+                    </div>
+    
+                    <div class="blog__content-right col-4 col-12-s">
+                        <div class="blog__content-intro">
+                            <div class="blog__content-intro-img">
+                                <img src="./assets/img/woods.jpg" alt="ảnh đại diện">
+                            </div>
+
+                            <div class="blog__content-intro-wrap">
+                                <div class="blog__content-intro-name">
+                                    Ngoc <span>21, Ha Noi.</span>
+                                </div>
+                                <div class="blog__content-intro-text">
+                                    Chỉ tôi, bản thân tôi và tôi, khám phá thế giới và vũ trụ vô định. Tôi có một trái tim nóng của tình yêu, một cái đầu đã lạnh dần của trải nghiệm và một niềm đam mê cháy bỏng với lập trình. Tôi muốn chia sẻ những điều đó, chia sẻ thế giới của tôi với bạn.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="blog__content-photos">
+                            <div class="blog__content-photos-title">
+                                Photo Blog
+                            </div>
+                            <div class="blog__content-photos-wrap">
+                                <!-- <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="blog__content-photos-footer">
+                                <a href="">XEM THÊM <span>»</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Render Blog -->
+            <div class="blog__detail-wrap">
+                <div class="blog__detail-1">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog1.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>November 25, 2021</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 1: Tự học lập trình hay học tại trung tâm?
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Chào tất cả các bạn đã đến với Q&A cùng WOM. Đây là chuyên mục đã nằm trong dự định của mình cũng một thời gian rồi. Mình thấy nó khá hay, mình nhìn thấy được tiềm năng cũng như giá trị mà nó có thể đem lại cho các bạn khi tham gia và sử dụng WOM. Nó cũng giúp giải đáp những thắc mắc, những câu hỏi mà những bạn đã gửi về cho mình. Thực sự mình rất muốn trả lời tất cả các câu hỏi của các bạn, trả lời riêng đến từng bạn, vì mình cũng có rất nhiều những khúc mắc trong cuộc sống cũng như học tập nên khi được giải đáp hoặc tìm ra được câu trả lời thì nó là một cảm giác cực kì thỏa mãn. Nhưng ở thời điểm hiện tại mình chưa thể có đủ thời gian để làm điều đó. Chính vì vậy, mình đã xuất bản series Q&A, chọn lọc ra những câu hỏi thực sự hay và thiết thực, có thể giải đáp không chỉ cho một mà còn nhiều bạn cũng đang băn khoăn. Okay, giới thiệu như vậy đủ rồi, cùng đi vào Q&A số đầu tiên nhé. <br>
+                            <b>Muốn giỏi lập trình có nhất thiết phải giỏi các môn tự nhiên hay không?</b> <br>
+                            Đây là câu hỏi đầu tiên mình muốn giải đáp cho các bạn nào đang chập chững tìm hiểu và muốn bắt đầu với ngành IT. Có thể chúng ta thấy rằng ngành IT hiện nay hầu hết là con trai đang làm việc, số lượng nữ rất ít. Thêm vào đó mình cũng nhận thấy rằng mấy bạn học IT thì thường hay ít nói, rồi đeo kính các thứ nhìn có vẻ là dành thời gian để học rất nhiều về các môn tính toán tự nhiên. Nhưng thực chất không hoàn toàn phải vậy đâu các bạn ạ. <br>
+                            Là một người đang học và làm trong ngành IT nên mình rất hiểu. Dân IT không hề ít nói đâu các bạn, thậm chí nói rất nhiều, như mình chẳng hạn ^^. Nhưng mà nói nhiều cũng phải tùy thuộc vào yếu tố hoàn cảnh, đối tượng,... và quan trọng là nói chất lượng các bạn ạ. Việc đeo kính nhiều thì cũng khá dễ hiểu thôi, vì là ngành đặc thù tiếp xúc rất nhiều với các thiết bị điện tử mà nên 10 ông IT thì đến 9 ông cận thôi. Xong có bạn lại hỏi là sao giờ nhiều người cũng suốt ngày dùng điện thoại laptop có khi thời gian sử dụng còn nhiều hơn dân IT mà sao số lượng phải đeo kính vẫn ít hơn những bạn học IT. Mình có thể trả lời các bạn như thế này. Khi các bạn không trong ngành IT thì thường dùng các thiết bị điện tử để giải trí hoặc làm các tác vụ văn phòng nhẹ nhàng hơn. Còn đối với các bạn học IT hoặc những bạn Designer thì khi nhìn vào những thiết bị điện tử độ tập trung là cực kì cao, quan sát chi tiết từng dòng code, từng centinmet, từng px trên màn hình,... Mình nói thật là vô cùng căng thẳng các bạn ạ, tập trung điểm nhìn rất nhỏ nên mắt vô cùng dễ bị tổn thương. Gần đây mình cũng nhận ra mắt mình đã mờ đi khá nhiều rồi, nhưng biết làm sao được, công việc của chúng ta mà.<br>
+                            Quay trở lại với câu hỏi chính rằng liệu muốn giỏi lập trình có nhất thiết phải giỏi những môn tự nhiên hay không?. Theo mình thấy, nếu như chúng ta có một nền tảng học những môn tự nhiên tốt, tư duy logic của chúng ta tốt thì đó là một lợi thế khi ta học IT. Chúng ta sẽ tiếp cận những xử lí logic, những thuật toán một cách nhanh chóng hơn. Nhưng chắc chắn không phải là yếu tốt quan trọng và quyết định nhất. Mình biết có rất nhiều bạn học ngành học hoặc học những trường kinh tế,... chuyển sang học IT, họ thậm chí học rất nhanh và làm việc rất tốt nữa. Tuy nhiên cũng không thể nào nói một bạn từ nhỏ đến lớn chỉ học những môn xã hội chuyển sang học IT được. Nói gọn lại, theo quan điểm cá nhân mình, muốn học tốt và theo đuổi ngành IT này chúng ta cũng cần một khả năng tư duy logic ở mức khá, không nhất thiết phải là người giỏi những môn tự nhiên. Điều quan trọng hơn đó là niềm đam mê và sự nỗ lực nghiêm túc của bản thân mỗi người. <br>
+                            <b>Tự học lập trình hay học tại trung tâm?</b> <br>
+                            Đến câu hỏi thứ hai của chúng ta ngày hôm nay. Chúng ta nên tự học lập trình hay học tại trung tâm?. Câu hỏi này mình thấy có rất nhiều người quan tâm và nó là một câu hỏi khá hot ở rất nhiều các diễn đàn IT trên mạng xã hội. Với mình thấy rằng, nếu như chúng ta tự học lập trình thì nên là những bạn đã và đang theo học chính chuyên ngành CNTT ở các trường đại học. Tự học đòi hỏi chúng ta phải có một nền tảng cơ bản về tư duy lập trình, những khái niệm cơ bản về IT. Thêm vào đó chúng ta phải là một người chủ động và có khả năng tự học, tự nghiên cứu. Khi đó việc tự học IT sẽ khả quan hơn và nó cũng giúp cho chúng ta khai phá, nâng tầm bản thân hơn. <br>
+                            Đó là với việc tự học, còn học ở trung tâm thì có điểm gì khác. Đương nhiên rồi, học ở trung tâm chúng ta sẽ có một lộ trình chi tiết và bài bản về chuyên ngành mà chúng ta muốn theo đuổi trong lĩnh vực IT. Chúng ta sẽ được học chi tiết những khái niệm một cách đầy đủ nhất, được hướng dẫn cụ thể từng phần học, có thể được giải đáp những khúc mắc từ những thầy cô ở đó,... Những bạn từ ngành khác chuyển qua học IT thì mình nghĩ học lập trình tại trung tâm là một điều rất cần thiết và sáng suốt. Hoặc với những bạn học chuyên ngành IT nhưng đã bỏ rất lâu muốn quay lại, những bạn thích học theo một lộ trình bài bản thì học tại trung tâm cũng là một sự lựa chọn đáng để lưu tâm. <br>
+                            Với bản thân mình thì mình chọn cách tự học lập trình, mình cũng là một người học chuyên ngành chính là CNTT, cũng có một chút base cơ bản về lập trình. Điều quan trọng là mình thích được tự tìm hiểu và nghiên cứu nhiều hơn, mình muốn tự tìm những kiến thức cần thiết cho bản thân cũng như những kiến thức bổ sung để nâng cao khả năng tự nghiên cứu. Nó cũng ảnh hưởng phần lớn từ tính cách thời đi học của mình. Nói thật với các bạn là hồi còn học THCS hay THPT mình chẳng muốn đi học thêm đâu, rất ít, có học thêm trên trường thì do bắt buộc mình phải đi thôi chứ học thêm các thầy cô bên ngoài gần như là không. Đến nỗi gần thi đại học mà mình cũng chỉ đi học thêm có mỗi một thầy mà hồi đó cũng là bố mẹ lo nên cứ cố bắt mình đi ấy chứ mình cũng không muốn ^^. <br>
+                            Đó là những chia sẻ vui một chút của mình thôi. Việc tự học hay học tại trung tâm rất quan trọng. Bạn phải là người hiểu rằng bản thân đang cần gì, đang thiếu gì và đang muốn mọi thứ sẽ ra sao để đưa ra quyết định hợp lí. Các bạn cũng không cần phải quá nghe mình đâu, những gì mình nói là quan điểm cá nhân mình muốn chia sẻ để cho các bạn tham khảo mà thôi. <br>
+                            <b>Tổng kết</b> <br>
+                            Vừa rồi cũng là câu hỏi cuối cùng của Q&A số đầu tiên, hi vọng những giải đáp, những chia sẻ của mình có thể giúp ích cho các bạn phần nào có thể tham khảo vào đó. Mình mong rằng sẽ nhận được thêm nhiều những câu hỏi hay, thú vị hơn nữa để mình có thể tìm hiểu và giải đáp được nhiều hơn cho các bạn. Q&A số 1 đến đây là kết thúc, hẹn gặp lại các bạn ở những số tiếp theo!!!
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like1" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-2">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog2.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>November 28, 2021</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 2: Có nên mua Macbook hoặc LaptopGaming để học lập trình?
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xin chào. Rất vui khi được gặp lại mọi người trong Q&A số thứ 2. Ngày chủ nhật cuối cùng của tháng 11 đối với các bạn thế nào. Với mình cảm xúc cũng khá nhiều thứ hỗn độn. Cảm giác thời gian hiện tại vừa nhanh lại vừa chậm, nhưng mong rằng tất cả mọi thứ sẽ luôn suôn sẻ. Cũng đã sắp cuối ngày rồi, hãy cùng thư giãn với WOM, nghỉ ngơi sau một tuần dài học tập và làm việc mệt mỏi. <br>
+                            Ở số trước, cũng là số đầu tiên Q&A được xuất bản, mình thấy được sự đón nhận rất tích cực của các bạn. Đó cũng chính là nguồn động viên không nhỏ để mình tiếp tục sản xuất những nội dung mới hay hơn, bổ ích hơn mang đến cho mọi người. <br>
+                            Trong số lần này, mình đã chọn được 2 câu hỏi khá hay trong những câu hỏi của các bạn đã gửi về cho WOM. Bắt đầu nào! <br>
+                            <b>Có nên mua Macbook hoặc LaptopGaming để học lập trình không?</b> <br>
+                            Đây là một câu hỏi mình nghĩ rất nhiều bạn quan tâm đến và chính bản thân mình cũng đã từng phân vân. Không giống như các ngành nghề khác, IT có một sự đặc thù nhất định trong việc lựa chọn một chiếc máy tính hoặc laptop để học tập và làm việc. Những chuyên ngành, môn học khác thường các bạn sẽ rất ít khi phải thao tác hay dùng những ứng dụng, trình duyệt, tác vụ có độ phức tạp lớn yêu cầu hiệu năng cao. Chủ yếu là những tác vụ văn phòng đơn giản và một số phần mềm, công cụ ở mức trung bình. Chính vì thế việc chọn máy tính khá đa dạng, linh hoạt, nhiều lựa chọn phù hợp với giá tiền có thể bỏ ra hay nhu cầu sử dụng,... <br>
+                            Còn đối với ngành IT, designer và một số ít ngành đặc thù khác. Chúng ta sẽ phải làm việc, thao tác trên những công cụ đơn luồng và đa luồng có độ phức tạp lớn, hiệu năng sử dụng lớn, chiếm dụng CPU cao, tốc độ xử lí lớn. Chính vì thế, một chiếc máy tính cần có đầy đủ những yếu tố như hiệu năng, vi xử lí, bộ nhớ trong và ngoài, cấu trúc phần cứng,... phải đảm bảo tốt cho quá trình phục vụ học tập và làm việc. <br>
+                            Nói qua về yêu cầu cơ bản của một chiếc laptop giúp chúng ta có thể học lập trình tốt. Yêu cầu tối thiểu đó là chip phải là Core i5 hoặc AMD Ryzen5 trở lên mới có thể đảm bảo về hiệu năng, Ram 8gb trở lên và có thể nâng cấp được, ổ cứng SSD 256gb có thể nâng cấp được, tản nhiệt khí hoặc hơi,... <br>
+                            Qua những yêu cầu trên giờ chúng ta quay lại với câu hỏi chính, có nên mua Macbook hoặc LaptopGaming để học lập trình?. Quan điểm của mình đó là nếu như điều kiện kinh tế cho phép, chúng ta có thể mua, nhưng mình không khuyến khích. Vì sao lại như vậy, mình sẽ giải thích cho các bạn thấy. <br>
+                            Đối với dòng Macbook, không ngại ngần gì nếu như một ai đó hỏi bạn về dòng Laptop nào đang là số 1 ở thời điểm hiện tại thì hãy mạnh dạn trả lời rằng đó là Macbook. Phải thừa nhận rằng Macbook đang sở hữu rất nhiều tính năng ưu việt, thậm chí có những tác vụ của máy hỗ trợ chuyên biệt cho những công cụ lập trình, tính bảo mật cao. À vậy tại sao mình lại không khuyến khích các bạn mới không nên mua Mac. Thứ nhất, với những người mới học lập trình hoặc có thể là đi làm 1,2 năm; việc dùng máy Mac sẽ có rất nhiều những điểm khó khăn. Mac sở hữu một hệ điều hành riêng biệt nên không dễ để sử dụng và làm quen với nó. Trong một môi trường học tập và làm việc mà đa số những tài nguyên chúng ta chia sẻ với nhau chủ yếu dành cho hệ điều hành Window thì việc dùng Mac đôi khi sẽ làm chúng ta rất khó khăn trong việc tiếp cận. Nếu như mua Mac mà phải cài Win thì khác gì đi mua máy Win đúng không nào?. Mac có những công cụ hỗ trợ chuyên biệt cho lập trình nhưng nó chỉ thực sự hữu ích nếu như ta biết áp dụng nó vào thực tế và sử dụng nó một cách thường xuyên. Khi mới học lập trình chúng ta sẽ chưa cần thiết phải dùng đến những tính năng ưu việt như vậy của Macbook. Đó là tất cả những lí do để mình khuyên các bạn chưa nên mua Macbook khi mới học lập trình, hãy mua nó khi sẵn sàng sử dụng được nó một cách tối ưu nhất.
+                            Tiếp theo là LaptopGaming, điểm chung của LaptopGaming và Macbook đó chính là hiệu năng rất mạnh của 2 dòng máy này. Những bạn nào thích một chiếc máy tính vừa chơi game ổn, vừa code ngon thì rất thích mua LaptopGaming. Nhưng điểm yếu mà ai cũng thấy ở dòng laptop này đó chính là kích cỡ to dày của nó, nhìn khá đồ sộ khiến việc mang đi di chuyển sẽ khó khăn, bất tiện. Một điều nữa là pin của LaptopGaming rất nhanh hết. Chúng ta chắc chắn không muốn lúc nào cũng phải cầm theo cục sạc trong người rồi đúng không nào. <br>
+                            Qua những điều mình chia sẻ ở trên mình thấy rằng việc mua Macbook hay LaptopGaming để học lập trình dành cho những bạn mà chúng ta vẫn còn đang đi học, mới đi làm hoặc mới bắt đầu lập trình giống như dùng dao mổ trâu để thịt chim sẻ vậy. Các bạn có thể cân nhắc những dòng máy tính có tầm giá từ 15-25 triệu để phục vụ trong giai đoạn này. Tin mình đi, rồi đến khi đi làm có lương sẽ chẳng ai giữ được chiếc máy tính mua từ thời năm nhất nữa đâu. Lúc đấy các bạn có thể nâng cấp lên những chiếc laptop cao cấp hơn hoặc khi đã đủ kinh nghiệm để sẵn sàng để dùng Macbook rồi thì ngại gì mà không sở hữu nó đúng không nào. <br>
+                            <b>Tấm bằng IT đối với người trái ngành?</b> <br>
+                            Đây cũng là câu hỏi cuối cùng trong Q&A số thứ 2 của chúng ta. Một câu hỏi cũng rất hay và thiết thực. Với câu hỏi này mình có thể trả lời nhanh gọn như sau. Đối với đặc thù của ngành IT, một ngành khá quan trọng về thực nghiệm làm việc nên vấn đề bằng cấp chứng chỉ không quá quan trọng đối với chúng ta. Mình quen biết khá nhiều người đang làm trong lĩnh vực IT và khi đi làm thì hầu như tấm bằng từ thời đại học vẫn đang treo ở tủ thôi các bạn ạ. Cho nên chúng ta cũng đừng quá lo lắng rằng liệu mình trái ngành chuyển sang CNTT, không có tấm bằng CNTT trên tay thì có xin được việc không. Nhưng cũng không phải rằng đồng nghĩa với việc mình khuyên các bạn không nên học để lấy bằng nhé. Tấm bằng đại học nó là một sự đánh dấu cho quá trình các bạn học tập trên giảng đường đại học. Khi đi xin việc không phải nó không có một chút tác dụng gì cả, CV đẹp kèm với tấm bằng xịn xò đương nhiên sẽ gây được cảm tình với nhà tuyển dụng. Quan trọng đó là sau này khi các bạn muốn thăng tiến, muốn lên những vị trí quản lí cao hơn thì yêu cầu tối thiểu tấm bằng đại học có thể là thứ cướp đi cơ hội của bạn nếu như giữ suy nghĩ không cần bằng cấp. 
+                            <b>Lời kết</b> <br>
+                            Vậy là chúng ta đã cùng nhau trải qua 2 câu hỏi trong Q&A số lần này rồi. Mong rằng những giải đáp của mình có thể giúp các bạn phần nào trong việc chọn lựa cũng như suy nghĩ đúng đắn hơn. Q&A số lần này xin phép được tạm dừng tại đây. Chúc các bạn một buổi tối cuối tuần vui vẻ. Xin chào và hẹn gặp lại!!!.
+
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like2" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-3">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog3.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>December 9, 2021</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 3: "Promise" về một bài học thú vị
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất <br>
+                            <iframe width="100%" src="https://www.youtube.com/embed/i-iuYrkMsl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like3" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-4">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog4.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>December 18, 2021</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 4: MobileFirst...?
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất <br>
+                            Link appmusic <b>leemincogn.github.io/appmusic/</b> phiên bản tối ưu cho mobile
+                            <iframe width="100%" src="https://www.youtube.com/embed/eX9L9lca08o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like4" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-5">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog5.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>December 25, 2021</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 5: Lộ trình học tập...?
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất <br>
+                            Link appmusic <b>leemincogn.github.io/appmusic/</b> phiên bản tối ưu cho mobile
+                            <iframe width="100%" src="https://www.youtube.com/embed/vLp-B-iV-E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like5" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-6">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog6.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>January 2, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 6
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Chào các bạn, một tuần nữa trôi qua và chúng ta gặp nhau trong Q&A số thứ 6. Đây cũng là số đầu tiên của năm mới 2022. Mình sẽ cố gắng sang năm 2022 sẽ trả lời được nhiều hơn những câu hỏi và thắc mắc của các bạn dành cho mình dù là bất cứ điều gì trong phạm vi mình có thể giải quyết và chia sẻ. Giờ thì cùng vào những câu hỏi ngay nào. <br>
+                            <b>Câu hỏi: Series về Promise đang hay mà chưa thấy bạn quay tiếp?</b> <br>
+                            Thực sự xin lỗi các bạn, những người anh em của mình, những thành viên đang quan tâm đến Promise. Thực sự những ngày vừa qua mình phải giải quyết một lượng lớn công việc cá nhân và gia đình, cũng khá bận rộn. Mình chưa tìm ra được lúc nào có đủ thời gian và không gian tốt để quay video cho các bạn cả, mình cũng buồn lắm chứ :(. Vì bản thân mình cũng biết đó là chủ đề rất hay và cần thiết, được mọi người quan tâm nên mình rất muốn hoàn thiện nó để mang đến cho các bạn. Nhưng cũng chính vì sự quan trọng đó mà mình không thể làm nó một cách qua loa, làm cho xong cho có. Chính vì vậy mà tới giờ mình vẫn chưa thể ra tiếp video cho các bạn được. Các bạn thấy đấy, ngay cả số Q&A lần này mình cũng đâu có quay video nổi đâu. Mong rằng mọi người sẽ thông cảm cho mình và chờ đợi. Mình hứa sẽ ra video sớm thôi ^^. <br>
+                            <b>Câu hỏi: Năm 2022 này bạn nghĩ ngôn ngữ nào sẽ lên ngôi và trở thành xu hướng lập trình, thu hút nhiều người quan tâm?</b>         <br>
+                            Với câu hỏi này mình xin phép trả lời theo quan điểm của cá nhân mình. Mình cũng có tìm hiểu và nhận thấy được rằng có những ngôn ngữ đang rất mạnh và được ưa chuộng vào cuối năm 2021 và rất có khả năng sẽ trở thành xu hướng của năm 2022. Đó là Python, Kotlin, đây là 2 ngôn ngữ mình đánh giá rất cao vì sự ưu việt của nó. Mình thấy nó đang tỏ ra mạnh mẽ, ngắn gọn, dễ dàng thao tác,... Không những thế Mobile First đang là xu thế, mà 2 ngôn ngữ này lại có thế mạnh trong mảng lập trình app mobile cả trên android hay ios. Tiếp đến vẫn là sự ổn định của javascript, một ngôn ngữ quá ổn định vì tính ưu việt của nó khi có thể lập trình cả phía Backend và Frontend, cũng là ngôn ngữ có số lượng người sử dụng lớn nhất. Sau đó mình thấy có 2 ngôn ngữ cũng mới mẻ đó là Scala và Go cũng đang nổi lên và được nhiều người quan tâm. Đó là cảm nhận của mình về xu thế ngôn ngữ trong năm 2022. <br>
+                            <b>Câu hỏi: Mình thấy bạn có những idea rất hay cho WOM, kiểu developer nhưng thay cả designer luôn, bạn có tham khảo ở đâu không về cả nội dung lẫn bố cục?</b> <br>
+                            Cảm ơn bạn đã có sự nhận xét và quan tâm dành cho mình. Nói thực việc thiết kế cũng như nội dung nó hệt như mấy vụ đạo nhạc mà không rõ ràng ấy. Mình cảm thấy thế. Vì khi các bạn là người nghe nhạc các bạn cảm nhận, những nốt nhạc, hợp âm và giai điệu ngấm vào trong đầu bạn. Đến khi bạn sáng tác, có những cảm nhận về âm thanh hồi tưởng lại và dẫn đến sự trùng hợp nhau ở một nốt hay một nhịp nào đó. Điều đó là không thể nào tránh khỏi. Website cũng thế, mình lướt biết bao nhiêu trang web, xem và tương tác biết bao nhiêu thiết kế khác nhau. Khi mình làm ra WOM đương nhiên có những điểm, bố cục giống web này web kia mặc dù mình không biết nó giống web nào. Nhưng mình khẳng định rằng đó là thiết kế mà do mình tự build ra trong đầu mà không dùng lại của website hay blog nào cả. Còn về ý tưởng nội dung. Mình cũng đã nói là mình thấu hiểu các bạn, từ đó đưa ra những thứ phù hợp với mọi người và những ý tưởng cứ thế tuôn ra thôi, mình chẳng dựa theo một form menu hay category nào cả. Nhưng các bạn yên tâm, mình là một người luôn biết thay đổi để mọi thứ tốt hơn, thú vị hơn. Chắc chắn sẽ còn nhiều điều hay ở phía trước và mình sẽ không làm các bạn thất vọng đâu. <br>
+                            <b>Câu hỏi: Bạn có thể bật mí một kế hoạch liên quan tới WOM trong năm 2022 không?</b>           <br>
+                            Quý lắm mới mách đấy nhé ^^. Okay, mình có thể nói một chút về điều này. Mình muốn đập đi xây lại WOM theo một cấu trúc và ngôn ngữ khác nếu như mình kịp hoàn thiện kiến thức và sẵn sàng làm nó. Mình sẽ chuyển đối WOM từ web MPA (Multi page application) sang dạng SPA (Single page application), những thuật ngữ này các bạn chủ động tìm hiểu. Cùng với đó là một số sản phầm giải trí kèm theo và những danh mục nội dung mới mà mình sẽ sản xuất. Nó có cả hình ảnh, âm thanh, ánh sáng,... và bí mật. Chỉ mách được đến thế thôi, mọi người cùng chờ đợi nhé. <br> 
+                            Rồi vậy là số đầu năm mới chúng ta đã cùng nhau qua 4 câu hỏi trong số này. Mình cũng cảm ơn những bạn khi gửi câu hỏi đã kèm theo những lời chúc tốt lành đến mình và WOM. Mình sẽ cố gắng để làm thật tốt để đáp lại những sự ủng hộ và mong mỏi từ phía các bạn. Chúc mọi người năm mới tốt lành.
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like6" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog__detail-7">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog7.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>January 11, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 7
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất <br>
+                            Link appmusic <b>leemincogn.github.io/appmusic/</b> phiên bản tối ưu cho mobile
+                            <iframe width="100%" src="https://www.youtube.com/embed/hbTTygrD7QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like7" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-8">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgQA/blog8.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>January 15, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Q&A số 8
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất <br>
+                            Link appmusic <b>leemincogn.github.io/appmusic/</b> phiên bản tối ưu cho mobile
+                            <iframe width="100%" src="https://www.youtube.com/embed/00DBJzJ9SmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like8" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-wrap">
+                    <div class="footer__icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-blogger-b"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    ©2022 Design by <i>elNgoc</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <style>
+        body{
+          overflow: hidden;
+          position: relative;
+        }
+        canvas {
+            cursor: crosshair;
+            display: block;
+            position:absolute;
+            z-index:5;
+            top:0;
+            width:100% !important;
+        }
+        </style>
+        <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+        <script type="text/javascript" src="https://wpshare247.com/ajquery.lib/fireworks/script.js"> </script> -->
+    <script src="./assets/js/readblogQA.js"></script>
+</body>
+</html>

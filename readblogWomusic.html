@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE OR ME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/blog-detail_style.css">
+    <link rel="stylesheet" href="./assets/css/readblogWomusic_style.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/icons8-pen-100.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&amp;family=Playfair+Display:wght@100;200;300;400;500;600;700&amp;family=Overpass:wght@200;300;400;600;700&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="pyro"><div class="before"></div><div class="after"></div></div>
+    
+    <!-- <div class="renderNoti" onclick="playIntro()">
+        <div class="form-notice">
+            <p>Trải nghiệm những điều tuyệt vời nhất cùng WE OR ME</p>
+            <span onclick="playIntro()">Let's go</span>
+        </div>
+    </div> -->
+
+    <!-- Audio -->
+
+    <!-- Hiệu ứng tuyết rơi -->
+    <style>
+        @-webkit-keyframes
+          snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes
+          snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes
+          snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes
+          snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{color:rgb(207, 190, 190);position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s} </style>
+        <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake" style="font-size: 30px;">❅</div>
+        <div class="snowflake" style="font-size: 40px;">❆ </div>
+        <div class="snowflake" style="font-size: 30px;">❆</div>
+        <div class="snowflake" style="font-size: 22px;">❅</div>
+        <div class="snowflake" style="font-size: 50px;">❆</div>
+        <div class="snowflake" style="font-size: 20px;">❅</div>
+        <div class="snowflake" style="font-size: 70px;">❆</div>
+        <div class="snowflake" style="font-size: 20px;">❆</div>
+        </div>
+
+
+
+
+    <div class="app">
+        <div class="wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="header__nav">
+                    <i onclick="navlist_open()" class="nav-icon fas fa-bars"></i>
+                    <!-- <span class="nav-name">WE OR ME</span> -->
+                    <i onclick="form_open()" class="nav-icon__user fas fa-user-circle"></i>
+                </div>
+                <div class="navlist">
+                    <i onclick="navlist_close()" class="navlist-icon far fa-times-circle"></i>
+                    <ul class="navlist-wrap">
+                        <li class="navlist-item"><a href="./index.html">HOME</a></li>
+                        <li class="navlist-item"><a href="./readblog.html">BLOG</a></li>
+                        <li class="navlist-item"><a href="./about.html">ABOUT</a></li>
+                        <li class="navlist-item"><a href="./contact.html">CONTACT</a></li>
+                        <li class="navlist-item"><a href="./update.html">UPDATE <i class="fas fa-exclamation-circle"></i></a></li>
+                        <!-- <i class="fas fa-exclamation-circle"></i> -->
+
+                    </ul>
+                </div>
+
+                <!-- Form user -->
+                <div class="form__user">
+                    <div class="form__user-overlay">
+
+                        <div class="form__user-body">
+                            <!-- form login -->
+                            <div class="form__user-login">
+                                <div class="form__user-header">
+                                    <div class="form__user-heading">Đăng Nhập</div>
+                                    <span onclick="form_registeropen()" class="form__user-switch-btn">Đăng Ký</span>
+                                </div>
+                                <div class="form__user-form">
+                                    <form action="">
+                                        <input required class="form__user-info" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                        <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                        <p>Quên Mật Khẩu</p>
+                                        <span onclick="form_close()">Trở Lại</span>
+                                        <button type="submit">Đăng Nhập</button>
+                                    </form>
+                                </div>
+                                <div class="form__user-footer">
+                                    <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook
+                                    </a>
+                                    <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                        <i class="fab fa-google"></i>
+                                        Google
+                                    </a>
+                                    <div class="form__user-link">
+                                        <i class="fas fa-comment-dots"></i>
+                                        SMS
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- form logout -->
+                            <div class="form__user-logout">
+                                <div class="form__user-header">
+                                    <div class="form__user-heading">Đăng Ký</div>
+                                    <span onclick="form_loginopen()" class="form__user-switch-btn">Đăng Nhập</span>
+                                </div>
+                                <div class="form__user-form">
+                                    <form action="">
+                                        <input required class="form__user-info" type="text" placeholder="Số điện thoại">
+                                        <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                        <input required class="form__user-info" type="password" placeholder="Xác Nhận Lại Mật khẩu">
+
+                                        <p class="form__user-policy">Bằng việc đăng kí, bạn đã đồng ý với WE OR ME về <label>Điều khoản dịch vụ</label> & <label>Chính sách bảo mật</label></p>
+                                        <span onclick="form_registerclose()">Trở Lại</span>
+                                        <button type="submit">Đăng Ký</button>
+                                    </form>
+                                </div>
+                                <div class="form__user-footer">
+                                    <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Kết nối với Facebook
+                                    </a>
+                                    <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                        <i class="fab fa-google"></i>
+                                        Kết nối với Google
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+    
+                <div class="header__title">
+                    <span style="font-family: Playfair Display, serif;">My Blog</span>
+                    <p class="header__title-text">Chào mừng đến với blog của <b class="header__title-text-name"></b></p>
+                </div>
+            </div>
+
+            <!-- <video src="./assets/video/VideosTutorial/intro Vidtt.mp4" playsinline autoplay muted width="100%" style="margin-bottom: 16px;" loop></video> -->
+
+            <!-- Category -->
+            <div class="category">
+                <ul class="category__wrap">
+                    <li class="category__item"><a href="./readblog.html">STUDY</a></li>
+                    <li class="category__item"><a href="./readblogWOMs.html">WOMs</a></li>
+                    <li class="category__item"><a href="./readblogWomusic.html">WMusic</a></li>
+                    <li class="category__item"><a href="./readblogQA.html">Q&A</a></li>
+                    <li class="category__item"><a href="./readblogVideos.html">Videos Tutorial</a></li>
+                </ul>
+            </div>
+
+            
+    
+            <!-- Body -->
+            <div class="body">
+                <div class="wrap-content">
+                    <div class="blog__content-left col-8 col-12-s">
+                        
+                    </div>
+    
+                    <div class="blog__content-right col-4 col-12-s">
+                        <div class="blog__content-intro">
+                            <div class="blog__content-intro-img">
+                                <img src="./assets/img/woods.jpg" alt="ảnh đại diện">
+                            </div>
+
+                            <div class="blog__content-intro-wrap">
+                                <div class="blog__content-intro-name">
+                                    Ngoc <span>21, Ha Noi.</span>
+                                </div>
+                                <div class="blog__content-intro-text">
+                                    Chỉ tôi, bản thân tôi và tôi, khám phá thế giới và vũ trụ vô định. Tôi có một trái tim nóng của tình yêu, một cái đầu đã lạnh dần của trải nghiệm và một niềm đam mê cháy bỏng với lập trình. Tôi muốn chia sẻ những điều đó, chia sẻ thế giới của tôi với bạn.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="blog__content-photos">
+                            <div class="blog__content-photos-title">
+                                Photo Blog
+                            </div>
+                            <div class="blog__content-photos-wrap">
+                                <!-- <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog__content-photos-item">
+                                    <div class="blog__content-photos-img">
+                                        <img src="./assets/img/workshop.jpg" alt="">
+                                    </div>
+                                    <div class="blog__content-photos-info">
+                                        <span class="blog__content-photos-address">
+                                            Ha Noi
+                                        </span>
+                                        <p class="blog__content-photos-time">
+                                            April 7, 2014
+                                        </p>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="blog__content-photos-footer">
+                                <a href="">XEM THÊM <span>»</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Render Blog -->
+            <div class="blog__detail-wrap">
+                <div class="blog__detail-1">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog1.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>January 25, 2022</span>
+                        <div class="blog__detail-content-title">
+                            HLC
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Hành lang cũ.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog1.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like1" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-2">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog2.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>January 28, 2022</span>
+                        <div class="blog__detail-content-title">
+                            CTCNTA
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Có tất cả nhưng thiếu anh.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog2.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like2" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-3">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog3.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 1, 2022</span>
+                        <div class="blog__detail-content-title">
+                            BQMCĐ
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Bước qua mùa cô đơn.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog3.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like3" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-4">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog4.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 5, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Mashup1
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Mashup1.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog4.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like4" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-5">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog5.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 7, 2022</span>
+                        <div class="blog__detail-content-title">
+                            CR
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Chuyện rằng.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog5.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like5" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-6">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog6.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 10, 2022</span>
+                        <div class="blog__detail-content-title">
+                            HNKM
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Hoa nở không màu.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog6.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like6" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-7">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog7.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 12, 2022</span>
+                        <div class="blog__detail-content-title">
+                            HongKong1
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/HongKong1.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog7.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like7" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-8">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog8.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 17, 2022</span>
+                        <div class="blog__detail-content-title">
+                            N-G-A-N
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Những gì anh nói.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog8.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like8" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-9">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog9.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 20, 2022</span>
+                        <div class="blog__detail-content-title">
+                            3107-123
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/3107-123.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog9.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like9" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-10">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog10.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 23, 2022</span>
+                        <div class="blog__detail-content-title">
+                            YĐKQTCVKVA
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Yêu đương khó quá thì chạy về khóc với anh.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog10.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like10" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__detail-11">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/imgWomusic/blog11.jpg" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 25, 2022</span>
+                        <div class="blog__detail-content-title">
+                            ĐVAMK
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xem ở chế độ fullscreen và đeo headphones để có trải nghiệm tốt nhất nhé!!! <br>
+                            <video src="./assets/video/Womusic/Đừng vì anh mà khóc.mp4" width="100%" controls poster="./assets/img/imgWomusic/blog11.jpg"></video>
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like11" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+    
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-wrap">
+                    <div class="footer__icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-blogger-b"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    ©2022 Design by <i>elNgoc</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <style>
+        body{
+          overflow: hidden;
+          position: relative;
+        }
+        canvas {
+            cursor: crosshair;
+            display: block;
+            position:absolute;
+            z-index:5;
+            top:0;
+            width:100% !important;
+        }
+        </style>
+        <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+        <script type="text/javascript" src="https://wpshare247.com/ajquery.lib/fireworks/script.js"> </script> -->
+    <script src="./assets/js/readblogWomusic.js"></script>
+</body>
+</html>

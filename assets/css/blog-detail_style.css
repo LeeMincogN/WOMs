@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: Overpass, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.blog__detail-1 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-2 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-3 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-4 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-5 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-6 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-7 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-8 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-9 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-10 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-11 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-12 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-13 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-14 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-15 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-16 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-17 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-18 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-19 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-20 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-21 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-22 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-23 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-24 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-25 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-26 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-27 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-28 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-29 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-30 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-31 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-32 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-33 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-34 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-35 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-36 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+.blog__detail-37 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.blog__detail-img img {
+    width: 100%;
+}
+
+.blog__detail-content {
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%),
+     0 4px 20px 0 rgb(0 0 0 / 19%);
+    position: relative;
+    top: -3px;
+}
+
+.blog__detail-content span {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    display: block;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.blog__detail-content-title {
+    font-size: 3.0rem;
+    margin-bottom: 16px;
+}
+
+.blog__detail-content-text {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+@media (max-width: 739px) {
+
+    .blog__detail-content {
+        margin: 0 16px 32px;
+    }
+
+    .blog__detail-content-title {
+        font-size: 2.4rem;
+    }
+
+    .blog__detail-content-text {
+        font-size: 1.4rem;
+    }
+}
+

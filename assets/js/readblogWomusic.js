@@ -1,0 +1,279 @@
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+    // window.onscroll = function() {myFunction()};
+    // function myFunction() {
+    //     if (document.body.scrollTop > 4100 || document.documentElement.scrollTop > 4100) {
+    //         $(".videoblog1").play();
+    //     }
+    // }
+
+    var count = 220
+
+//renderBlog 
+function opendetail(index) {
+    $('.body').style.display = 'none';
+
+    switch (index) {
+        case 1:
+            $('.blog__detail-1').style.display = 'block';
+            $('.musicblog1').play();
+            $('.musicblog1').volume = 0.02;
+            
+            break;
+        case 2:
+            $('.blog__detail-2').style.display = 'block';
+            $('.musicblog2').play();
+            $('.musicblog2').volume = 0.02;
+            break;
+        case 3:
+            $('.blog__detail-3').style.display = 'block';
+            $('.musicblog3').play();
+            $('.musicblog3').volume = 0.02;
+            break;
+        case 4:
+            $('.blog__detail-4').style.display = 'block';
+            $('.musicblog4').play();
+            $('.musicblog4').volume = 0.02;
+            break;
+        case 5:
+            $('.blog__detail-5').style.display = 'block';
+            $('.musicblog5').play();
+            $('.musicblog5').volume = 0.02;
+            break;
+        case 6:
+            $('.blog__detail-6').style.display = 'block';
+            $('.musicblog6').play();
+            $('.musicblog6').volume = 0.02;
+            break;
+        case 7:
+            $('.blog__detail-7').style.display = 'block';
+            $('.musicblog7').play();
+            $('.musicblog7').volume = 0.02;
+            break;
+        case 8:
+            $('.blog__detail-8').style.display = 'block';
+            $('.musicblog8').play();
+            $('.musicblog8').volume = 0.02;
+            break;
+        case 9:
+            $('.blog__detail-9').style.display = 'block';
+            $('.musicblog9').play();
+            $('.musicblog9').volume = 0.02;
+            break;
+        case 10:
+            $('.blog__detail-10').style.display = 'block';
+            $('.musicblog10').play();
+            $('.musicblog10').volume = 0.02;
+            break;
+        case 11:
+            $('.blog__detail-11').style.display = 'block';
+            $('.musicblog11').play();
+            $('.musicblog11').volume = 0.02;
+            break;
+    }
+    
+}
+
+//
+function liked() {
+    $('#like1').style.fontWeight = '900';
+    $('#like2').style.fontWeight = '900';
+    $('#like3').style.fontWeight = '900';
+    $('#like4').style.fontWeight = '900';
+    $('#like5').style.fontWeight = '900';
+    $('#like6').style.fontWeight = '900';
+    $('#like7').style.fontWeight = '900';
+    $('#like8').style.fontWeight = '900';
+    $('#like9').style.fontWeight = '900';
+    $('#like10').style.fontWeight = '900';
+    $('#like11').style.fontWeight = '900';
+
+
+
+}
+
+//Đặt text title welcome
+$('.header__title-text-name').textContent = '_Cogn</br>'
+
+// Hàm navlist
+function navlist_open() {
+    $('.navlist').style.display = 'block';
+    $('.nav-icon').style.display = 'none';
+}
+
+function navlist_close() {
+    $('.navlist').style.display = 'none';
+    $('.nav-icon').style.display = 'block';
+}
+
+//Hàm open form
+function form_open() {
+    $('.form__user').style.display = 'block';
+    $('.form__user-login').style.display = 'block';
+}
+
+function form_close() {
+    $('.form__user').style.display = 'none';
+}
+
+//Hàm form logout 
+function form_registeropen() {
+    $('.form__user-logout').style.display = 'block';
+    $('.form__user-login').style.display = 'none';
+}
+
+function form_loginopen() {
+    $('.form__user-login').style.display = 'block';
+    $('.form__user-logout').style.display = 'none';
+}
+
+function form_registerclose() {
+    $('.form__user').style.display = 'none';
+    $('.form__user-logout').style.display = 'none';
+}
+
+function fullscreen() {
+    if ($('.videoUpdate').requestFullscreen) {
+        $('.videoUpdate').requestFullscreen();
+    } else if ($('.videoUpdate').webkitRequestFullscreen) { /* Safari */
+        $('.videoUpdate').webkitRequestFullscreen();
+    } else if ($('.videoUpdate').msRequestFullscreen) { /* IE11 */
+        $('.videoUpdate').msRequestFullscreen();
+    }
+  }
+
+
+
+
+
+
+
+
+//render blog
+
+const app = {
+    blogs: [
+        {
+            index: 1,
+            like: 197,
+            image: './assets/img/imgWomusic/blog1.jpg',
+            title: 'HLC',
+            time: 'January 25, 2022',
+            description: ''
+        },
+        {
+            index: 2,
+            like: 136,
+            image: './assets/img/imgWomusic/blog2.jpg',
+            title: 'CTCNTA',
+            time: 'January 28, 2022',
+            description: ''
+        },
+        {
+            index: 3,
+            like: 94,
+            image: './assets/img/imgWomusic/blog3.jpg',
+            title: 'BQMCĐ',
+            time: 'February 1, 2022',
+            description: ''
+        },
+        {
+            index: 4,
+            like: 51,
+            image: './assets/img/imgWomusic/blog4.jpg',
+            title: 'Mashup1',
+            time: 'February 5, 2022',
+            description: ''
+        },
+        {
+            index: 5,
+            like: 32,
+            image: './assets/img/imgWomusic/blog5.jpg',
+            title: 'CR',
+            time: 'February 7, 2022',
+            description: ''
+        },
+        {
+            index: 6,
+            like: 0,
+            image: './assets/img/imgWomusic/blog6.jpg',
+            title: 'HNKM',
+            time: 'February 10, 2022',
+            description: ''
+        },
+        {
+            index: 7,
+            like: -36,
+            image: './assets/img/imgWomusic/blog7.jpg',
+            title: 'HongKong1',
+            time: 'February 12, 2022',
+            description: ''
+        },
+        {
+            index: 8,
+            like: -51,
+            image: './assets/img/imgWomusic/blog8.jpg',
+            title: 'N-G-A-N',
+            time: 'February 17, 2022',
+            description: ''
+        },
+        {
+            index: 9,
+            like: -79,
+            image: './assets/img/imgWomusic/blog9.jpg',
+            title: '3107-123',
+            time: 'February 20, 2022',
+            description: ''
+        },
+        {
+            index: 10,
+            like: -100,
+            image: './assets/img/imgWomusic/blog10.jpg',
+            title: 'YĐKQTCVKVA',
+            time: 'February 23, 2022',
+            description: ''
+        },
+        {
+            index: 11,
+            like: -131,
+            image: './assets/img/imgWomusic/blog11.jpg',
+            title: 'ĐVAMK',
+            time: 'February 25, 2022',
+            description: ''
+        },
+    ],
+    render: function() {
+        const htmls = this.blogs.map(function(blog) {
+            return `
+                <div class="blog__content-sum">
+                    <div class="blog__content-sum-img">
+                        <img src="${blog.image}" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__content-wrap">
+                        <div class="blog__content-sum-title">
+                            ${blog.title} <span>${blog.time}</span>
+                        </div>
+                        <div class="blog__content-sum-des">
+                            ${blog.description}
+                        </div>
+                        <div class="blog__content-sum-footer">
+                            <div onclick='opendetail(${blog.index})' class="blog__content-sum-btn">
+                                <a href="#">ĐỌC THÊM</a> <span>»</span>
+                            </div>
+                            <div class="blog__content-sum-cmt">
+                            Yêu thích <span><p>${count + blog.like}</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        })
+        $('.blog__content-left').innerHTML = htmls.join('')
+    },
+    start: function() {
+        this.render()
+    }
+}
+
+app.start()

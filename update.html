@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE OR ME</title>
+    <link rel="stylesheet" href="./assets/css/about_style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/icons8-pen-100.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&amp;family=Playfair+Display:wght@100;200;300;400;500;600;700&amp;family=Overpass:wght@200;300;400;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pyro"><div class="before"></div><div class="after"></div></div>
+
+<!-- Hiệu ứng tuyết rơi -->
+<style>
+    @-webkit-keyframes
+      snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes
+      snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes
+      snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes
+      snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{color:rgb(207, 190, 190);position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s} </style>
+    <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake" style="font-size: 30px;">❅</div>
+    <div class="snowflake" style="font-size: 40px;">❆ </div>
+    <div class="snowflake" style="font-size: 30px;">❆</div>
+    <div class="snowflake" style="font-size: 22px;">❅</div>
+    <div class="snowflake" style="font-size: 50px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❅</div>
+    <div class="snowflake" style="font-size: 70px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❆</div>
+    </div>
+
+
+    <div class="header">
+        <div class="header__nav">
+            <i onclick="navlist_open()" class="nav-icon fas fa-bars"></i>
+            <!-- <span class="nav-name">WE OR ME</span> -->
+            <i onclick="form_open()" class="nav-icon__user fas fa-user-circle"></i>
+            
+        </div>
+        <div class="navlist">
+            <i onclick="navlist_close()" class="navlist-icon far fa-times-circle"></i>
+            <ul class="navlist-wrap">
+                <li class="navlist-item"><a href="./index.html">HOME</a></li>
+                <li class="navlist-item"><a href="./readblog.html">BLOG</a></li>
+                <li class="navlist-item"><a href="./about.html">ABOUT</a></li>
+                <li class="navlist-item"><a href="./contact.html">CONTACT</a></li>
+                <li class="navlist-item"><a href="./update.html">UPDATE <i class="fas fa-exclamation-circle"></i></a></li> 
+
+            </ul>
+        </div>
+
+        <!-- Form user -->
+        <div class="form__user">
+            <div class="form__user-overlay">
+
+                <div class="form__user-body">
+                    <!-- form login -->
+                    <div class="form__user-login">
+                        <div class="form__user-header">
+                            <div class="form__user-heading">Đăng Nhập</div>
+                            <span onclick="form_registeropen()" class="form__user-switch-btn">Đăng Ký</span>
+                        </div>
+                        <div class="form__user-form">
+                            <form action="">
+                                <input required class="form__user-info" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                <p>Quên Mật Khẩu</p>
+                                <span onclick="form_close()">Trở Lại</span>
+                                <button type="submit">Đăng Nhập</button>
+                            </form>
+                        </div>
+                        <div class="form__user-footer">
+                            <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </a>
+                            <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </a>
+                            <div class="form__user-link">
+                                <i class="fas fa-comment-dots"></i>
+                                SMS
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- form logout -->
+                    <div class="form__user-logout">
+                        <div class="form__user-header">
+                            <div class="form__user-heading">Đăng Ký</div>
+                            <span onclick="form_loginopen()" class="form__user-switch-btn">Đăng Nhập</span>
+                        </div>
+                        <div class="form__user-form">
+                            <form action="">
+                                <input required class="form__user-info" type="text" placeholder="Số điện thoại">
+                                <input required class="form__user-info" type="password" placeholder="Mật khẩu">
+                                <input required class="form__user-info" type="password" placeholder="Xác Nhận Lại Mật khẩu">
+
+                                <p class="form__user-policy">Bằng việc đăng kí, bạn đã đồng ý với WE OR ME về <label>Điều khoản dịch vụ</label> & <label>Chính sách bảo mật</label></p>
+                                <span onclick="form_registerclose()">Trở Lại</span>
+                                <button type="submit">Đăng Ký</button>
+                            </form>
+                        </div>
+                        <div class="form__user-footer">
+                            <a href="https://m.facebook.com/login/?locale=vi_VN" class="form__user-link">
+                                <i class="fab fa-facebook-f"></i>
+                                Kết nối với Facebook
+                            </a>
+                            <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Dvi&hl=vi&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="form__user-link">
+                                <i class="fab fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="about__title" style="font-family: Playfair Display, serif;">Update Details</h1>
+        <p class="about__content">
+            Chi tiết bản cập nhật 1.8 <br>
+            - Update new page Home <br>
+            - Fixbug code<br>
+
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="footer__icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-blogger-b"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            ©2022 Design by <i>elNgoc</i>
+        </div>
+    </div>
+
+    <script>
+
+        // Hàm open navlist
+        function navlist_open() {
+            document.querySelector('.navlist').style.display = 'block';
+            document.querySelector('.intro').style.display = 'none';
+            document.querySelector('.nav-icon').style.display = 'none';
+        }
+
+        //Hàm close navlist
+        function navlist_close() {
+            document.querySelector('.navlist').style.display = 'none';
+            document.querySelector('.intro').style.display = 'block';
+            document.querySelector('.nav-icon').style.display = 'block';
+        }
+
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        //Hàm open form
+            function form_open() {
+                $('.form__user').style.display = 'block';
+                $('.form__user-login').style.display = 'block';
+            }
+
+            function form_close() {
+                $('.form__user').style.display = 'none';
+            }
+
+            //Hàm form logout 
+            function form_registeropen() {
+                $('.form__user-logout').style.display = 'block';
+                $('.form__user-login').style.display = 'none';
+            }
+
+            function form_loginopen() {
+                $('.form__user-login').style.display = 'block';
+                $('.form__user-logout').style.display = 'none';
+            }
+
+            function form_registerclose() {
+                $('.form__user').style.display = 'none';
+                $('.form__user-logout').style.display = 'none';
+            }
+    </script>
+</body>
+</html>
