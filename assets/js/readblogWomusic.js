@@ -228,7 +228,7 @@ const app = {
         },
         {
             index: 10,
-            like: -100,
+            like: -94,
             image: './assets/img/imgWomusic/blog10.jpg',
             title: 'YĐKQTCVKVA',
             time: 'February 23, 2022',
@@ -236,7 +236,7 @@ const app = {
         },
         {
             index: 11,
-            like: -131,
+            like: -111,
             image: './assets/img/imgWomusic/blog11.jpg',
             title: 'ĐVAMK',
             time: 'February 25, 2022',
