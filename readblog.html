@@ -2356,6 +2356,60 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="blog__detail-38">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/blog38.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>February 28, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Closure trong JavaScript (Phần 1)
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xin chào, hôm nay mình sẽ giới thiệu đến các bạn một kiến thức khá cơ bản của JS nhưng lại rất ít khi chúng ta để ý đến vì thường đều dùng sẵn nó. Đó chính là prototype của JS. Vậy prototype là gì cùng mình vào bài học của ngày hôm nay nhé!!! <br>
+
+                            <img src="./assets/img/imgblog31/1.jpg" width="100%" alt=""> <br>
+                            <b>Tại sao cần bắt lỗi và xử lý lỗi</b> <br>
+                            JavaScript là một ngôn ngữ lỏng lẻo (dynamic), nó không đưa ra lỗi trong lúc biên dịch. <br>
+                            Một số trường hợp bạn sẽ gặp phải lúc runtime error cho những biến không được định nghĩa hoặc là gọi những hàm chưa được định nghĩa, hoặc là lỗi do nhập sai, lỗi xuất hiện một cách không lường trước được. <br>
+                            Một lỗi runtime error là một lỗi rất nghiêm trọng. Nó sẽ phơi bày bộ mặt yếu kém của bạn cho người dùng thấy. Khiến họ có trải nghiệm tệ hại. Mặc dù, Bug là everywhere!!! Nhưng, bạn cần lường trước để bắt lỗi và xử lý nó. <br>
+                            <b>Try - Catch - Finally</b> <br>
+                            Cơ chế bắt và xử lý lỗi try - catch - finally trong JavaScript cũng tương tự như Java hay C# <br>
+                            Cú pháp try - catch - finally: <br>
+                            <img src="./assets/img/imgblog31/2.png" width="100%" alt=""> <br>
+                            Trong đó: <br>
+                            <li>try {...}: Bao quanh vùng code khả nghi, có khả năng sinh ra lỗi.</li>
+                            <li>catch { ... }: Xử lý thông tin nếu có lỗi. Kiểu như là log file hay là log database hoặc xuất ra màn hình để người lập trình dễ kiểm soát. Hay đơn giản là điều hướng, thông báo lỗi một cách thân thiện hơn cho người dùng.</li>
+                            <li>finally { ... }: Đoạn code này luôn luôn được gọi để xử lý các tác vụ còn lại, ví dụ như reset biến hay các tác vụ khác.</li>
+                            <li>ex: Là biến đại diện cho lỗi (bạn có thể đặt thế nào tùy thích). Nó sẽ nhận sáu giá trị khác nhau có thể được trả về nếu chương trình bị lỗi. (Chúng ta sẽ tìm hiểu ở phần dưới)</li>
+                            Một ví dụ về câu lệnh try - catch - finally: <br>
+                            <img src="./assets/img/imgblog31/3.png" width="100%" alt=""> <br>
+                            Kết quả chạy trên trình duyệt như sau: <br>
+                            <img src="./assets/img/imgblog31/4.png" width="100%" alt=""> <br>
+                            Kết quả trên cho thấy: <br>
+                            + Dòng lệnh đầu tiên là in ra: Lập trình JavaScript căn bản. <br>
+                            + Khối try: <br>
+                            <li>Dòng lệnh thứ nhất đúng nên in ra text trên trình duyệt</li>
+                            <li>Dòng lệnh thứ hai sai từ khóa nên sẽ không thực thi và chuyển sang catch để bắt lỗi.</li>
+                            <li>Dòng lệnh thứ ba sẽ không được thực thi vì dòng lệnh phía trên nó đã bị lỗi.</li>
+                            + Khối catch: <br>
+                            <li>Dòng lệnh thứ nhất được in ra: Điều này có nghĩa là trong try có lỗi thì catch mới chạy.</li>
+                            <li>Dòng lệnh thứ hai: In ra lỗi bắt được ở dạng chuỗi.</li>
+                            + Khối finally: <br>
+                            <li>Dòng lệnh trong này chạy vì cho dù có lỗi hay không có lỗi ở phần try thì đoạn code trong finally vẫn được thực thi.</li>
+                            Một ví dụ khác về try - catch - finally: <br>
+                            <img src="./assets/img/imgblog31/5.png" width="100%" alt=""> <br>
+                            Khi chạy chương trình, kết quả nhận được là: <br>
+                            <img src="./assets/img/imgblog31/6.png" width="100%" alt=""> <br>
+                            Vừa rồi mình đã giới thiệu cho các bạn một nữa về xử lí lỗi trong JS rồi. Mong rằng bài học khởi động nhẹ nhàng này sẽ không làm khó các bạn và giúp mọi người có thể quay trở lại nhịp học tập bình thường tốt nhất. Hẹn gặp lại các bạn trong phần tiếp theo nhé!!! 
+
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like38" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- Footer -->

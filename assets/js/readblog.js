@@ -192,10 +192,15 @@ function opendetail(index) {
             $('.musicblog36').play();
             $('.musicblog36').volume = 0.02;
             break;
-            case 37:
-        $('.blog__detail-37').style.display = 'block';
+        case 37:
+            $('.blog__detail-37').style.display = 'block';
             $('.musicblog37').play();
             $('.musicblog37').volume = 0.02;
+            break;
+        case 38:
+            $('.blog__detail-38').style.display = 'block';
+            $('.musicblog38').play();
+            $('.musicblog38').volume = 0.02;
             break;
     }
     
@@ -240,6 +245,7 @@ function liked() {
     $('#like35').style.fontWeight = '900';
     $('#like36').style.fontWeight = '900';
     $('#like37').style.fontWeight = '900';
+    $('#like38').style.fontWeight = '900';
 
 
 }
@@ -571,7 +577,7 @@ const app = {
         },
         {
             index: 36,
-            like: -300,
+            like: -289,
             image: './assets/img/blog36.jpg',
             title: 'Prototype trong JavaSCript (Phần 1)',
             time: 'February 23, 2022',
@@ -579,11 +585,19 @@ const app = {
         },
         {
             index: 37,
-            like: -362,
+            like: -311,
             image: './assets/img/blog37.jpg',
             title: 'Prototype trong JavaSCript (Phần 2)',
             time: 'February 25, 2022',
             description: '...Điều này thường được gọi là chuỗi nguyên mẫu (Prototype chain) và cũng nhằm giải thích tại sao các đối tượng khác nhau có thuộc tính và phương thức...'
+        },
+        {
+            index: 38,
+            like: -358,
+            image: './assets/img/blog38.png',
+            title: 'Closure trong JavaScript (Phần 1)',
+            time: 'February 28, 2022',
+            description: '...Các hàm lồng vào nhau có quyền truy cập vào các biến dược khai báo trong phạm vi bên ngoài của chúng....'
         }
         
     ],
