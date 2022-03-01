@@ -593,7 +593,7 @@ const app = {
         },
         {
             index: 38,
-            like: -358,
+            like: -321,
             image: './assets/img/blog38.png',
             title: 'Closure trong JavaScript (Phần 1)',
             time: 'February 28, 2022',
