@@ -359,7 +359,7 @@ const app = {
         },
         {
             index: 20,
-            like: -269,
+            like: -223,
             image: './assets/img/imgWOMs/blog20.jpg',
             title: 'A small gift from me for music lovers',
             time: 'February 27, 2022',

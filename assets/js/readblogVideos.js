@@ -222,7 +222,7 @@ const app = {
         },
         {
             index: 10,
-            like: -188,
+            like: -123,
             image: './assets/img/imgVideos/blog10.png',
             title: 'Làm việc với mảng (Phần 2)',
             time: 'February 18, 2022',

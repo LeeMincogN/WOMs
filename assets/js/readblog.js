@@ -585,7 +585,7 @@ const app = {
         },
         {
             index: 37,
-            like: -311,
+            like: -281,
             image: './assets/img/blog37.jpg',
             title: 'Prototype trong JavaSCript (Phần 2)',
             time: 'February 25, 2022',
@@ -593,7 +593,7 @@ const app = {
         },
         {
             index: 38,
-            like: -321,
+            like: -300,
             image: './assets/img/blog38.png',
             title: 'Closure trong JavaScript (Phần 1)',
             time: 'February 28, 2022',

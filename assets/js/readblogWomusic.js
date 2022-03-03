@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 220
+    var count = 231
 
 //renderBlog 
 function opendetail(index) {
@@ -71,6 +71,11 @@ function opendetail(index) {
             $('.musicblog11').play();
             $('.musicblog11').volume = 0.02;
             break;
+        case 12:
+            $('.blog__detail-12').style.display = 'block';
+            $('.musicblog12').play();
+            $('.musicblog12').volume = 0.02;
+            break;
     }
     
 }
@@ -88,6 +93,7 @@ function liked() {
     $('#like9').style.fontWeight = '900';
     $('#like10').style.fontWeight = '900';
     $('#like11').style.fontWeight = '900';
+    $('#like12').style.fontWeight = '900';
 
 
 
@@ -236,10 +242,18 @@ const app = {
         },
         {
             index: 11,
-            like: -111,
+            like: -100,
             image: './assets/img/imgWomusic/blog11.jpg',
             title: 'ĐVAMK',
             time: 'February 25, 2022',
+            description: ''
+        },
+        {
+            index: 12,
+            like: -200,
+            image: './assets/img/imgWomusic/blog12.jpg',
+            title: 'hennessy (acoustic ver.)',
+            time: 'March 3, 2022',
             description: ''
         },
     ],
