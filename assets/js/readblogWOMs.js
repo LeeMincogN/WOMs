@@ -364,6 +364,14 @@ const app = {
             title: 'A small gift from me for music lovers',
             time: 'February 27, 2022',
             description: '......'
+        },
+        {
+            index: 21,
+            like: -330,
+            image: './assets/img/imgWOMs/blog21.png',
+            title: 'Good web icon for FE',
+            time: 'March 6, 2022',
+            description: '......'
         }
     ],
     render: function() {
