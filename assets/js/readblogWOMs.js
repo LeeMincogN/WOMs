@@ -367,7 +367,7 @@ const app = {
         },
         {
             index: 21,
-            like: -330,
+            like: -269,
             image: './assets/img/imgWOMs/blog21.png',
             title: 'Good web icon for FE',
             time: 'March 6, 2022',
