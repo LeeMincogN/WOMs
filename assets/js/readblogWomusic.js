@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 231
+    var count = 242
 
 //renderBlog 
 function opendetail(index) {
@@ -76,6 +76,11 @@ function opendetail(index) {
             $('.musicblog12').play();
             $('.musicblog12').volume = 0.02;
             break;
+        case 13:
+            $('.blog__detail-13').style.display = 'block';
+            $('.musicblog13').play();
+            $('.musicblog13').volume = 0.02;
+            break;
     }
     
 }
@@ -94,6 +99,7 @@ function liked() {
     $('#like10').style.fontWeight = '900';
     $('#like11').style.fontWeight = '900';
     $('#like12').style.fontWeight = '900';
+    $('#like13').style.fontWeight = '900';
 
 
 
@@ -202,7 +208,7 @@ const app = {
         },
         {
             index: 6,
-            like: 0,
+            like:  45,
             image: './assets/img/imgWomusic/blog6.jpg',
             title: 'HNKM',
             time: 'February 10, 2022',
@@ -210,7 +216,7 @@ const app = {
         },
         {
             index: 7,
-            like: -36,
+            like: -11,
             image: './assets/img/imgWomusic/blog7.jpg',
             title: 'HongKong1',
             time: 'February 12, 2022',
@@ -226,7 +232,7 @@ const app = {
         },
         {
             index: 9,
-            like: -79,
+            like: -43,
             image: './assets/img/imgWomusic/blog9.jpg',
             title: '3107-123',
             time: 'February 20, 2022',
@@ -242,7 +248,7 @@ const app = {
         },
         {
             index: 11,
-            like: -100,
+            like: -52,
             image: './assets/img/imgWomusic/blog11.jpg',
             title: 'ĐVAMK',
             time: 'February 25, 2022',
@@ -250,10 +256,18 @@ const app = {
         },
         {
             index: 12,
-            like: -200,
+            like: -120,
             image: './assets/img/imgWomusic/blog12.jpg',
             title: 'hennessy (acoustic ver.)',
             time: 'March 3, 2022',
+            description: ''
+        },
+        {
+            index: 13,
+            like: -212,
+            image: './assets/img/imgWomusic/blog13.jpg',
+            title: 'nmyccđym (short ver.)',
+            time: 'March 9, 2022',
             description: ''
         },
     ],

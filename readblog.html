@@ -2410,6 +2410,173 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="blog__detail-39">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/blog38.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>March 8, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Closure trong JavaScript (Phần 2)
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Mình đã quay trở lại rồi đây. Tiếp tục với phần 2 còn đang dang dở của Closure trong JS đúng không nào. Sau khi hiểu được về khái niệm cũng như ứng dụng của nó ở phần 1 thì việc tiếp theo khá là dễ dàng rồi đấy. Không làm mất thời gian nữa chúng ta cùng vào luôn nhé!!! <br>
+
+                            3. Closures trong vòng lặp
+
+                            Cùng xem ví dụ vòng lặp for sau với mình:
+
+
+                            for (var i = 1; i <= 3; i++) {
+                                setTimeout(function() {
+                                    console.log('Sau ' + i + ' giây: ' + i);
+                                }, i * 1000);
+                            }
+                            
+
+                            Kết quả:
+
+                            Ví dụ closure trong vòng lặp
+
+                            Đoạn code sẽ cho ra kết quả tương tự nhau.
+
+                            Nhưng điều mà mình muốn làm trong vòng lặp là sao chép giá trị của i trong mỗi lần lặp tại thời điểm lặp để hiển thị thông báo sau 1, 2, 3 giây.
+
+                            Lý do bạn thấy cùng một thông báo Sau 4 giây(s):4  là do lệnh gọi là được chuyển đến setTimeout() là một hàm closure.
+
+                            Nó sẽ nhớ giá trị của i từ lần lặp cuối cùng của vòng lặp, là 4.
+
+                            Ngoài ra, cả ba closures được tạo bởi vòng lặp for đều chia sẻ cùng một phạm vi toàn cục truy cập cùng một giá trị của i.
+
+                            Để giải quyết vấn đề này, bạn cần tạo một closure mới trong mỗi lần lặp của vòng lặp.
+
+                            Có hai giải pháp là: IIFE và từ khóa let.
+
+                            3.1. Sử dụng IIFE
+
+                            Trong giải pháp này, bạn sử dụng một biểu thức hàm được gọi ngay lập tức (còn gọi là IIFE) vì IIFE tạo một scope mới bằng cách định nghĩa một hàm và thực thi nó ngay lập tức.
+
+
+                            for (var i = 1; i <= 3; i++) {
+                                (function(i) {
+                                    setTimeout(function() {
+                                        console.log('Sau ' + i + ' giây(s):' + i);
+                                    }, i * 1000);
+                                })(i);
+                            }
+                            
+
+                            Kết quả ta được:
+
+                            Closure trong vòng lặp: Giải pháp IIFE
+
+                            3.2. Sử dụng từ khóa let
+
+                            Nếu bạn sử dụng từ khóa let trong vòng lặp for, nó sẽ tạo ra một phạm vi sử dụng mới trong mỗi lần lặp.
+
+                            Nói cách khác là bạn sẽ có một biến i mới trong mỗi lần lặp.
+
+                            Ngoài ra, phạm vi sử dụng mới được liên kết với phạm vi sử dụng trước đó để giá trị trước đó của i được sao chép lại.
+
+
+                            for (let i = 1; i <= 3; i++) {
+                                setTimeout(function() {
+                                    console.log('Sau ' + i + ' giây: ' + i);
+                                }, i * 1000);
+                            }
+                            
+
+                            Kết quả:
+
+                            Closure trong vòng lặp: Giải pháp từ khóa let
+
+                            4. Ứng dụng closures trong thực tế
+
+                            Closures rất hữu ích vì nó cho phép chúng ta gắn một vài dữ liệu (bên trong lexical environment) với một function sẽ tương tác với dữ liệu.
+
+                            Tương tự như trong lập trình hướng đối tượng, các đối tượng cho phép chúng ta gắn một vài dữ liệu với một hoặc nhiều phương thức bên trong.
+                            
+
+                            Trong lập trình web, hầu hết code được viết bằng JavaScript là event-based — chúng ta định nghĩa một xử lý, sau đó gắn nó vào event sẽ được gọi bởi user (ví dụ như hành vi click hay nhấn phím).
+
+                            Đoạn code của chúng ta sẽ là callback: 1 function chạy khi có một sự kiện xảy ra.
+
+                            > Tìm hiểu thêm về Callback trong JavaScript
+                            
+
+                            Ví dụ:
+                            
+
+                            Giả sử chúng ta muốn thêm một cái nút để thay đổi kích thước chữ. Một trong những cách làm là thiết lập font-size cho thẻ body bằng giá trị px, sau đó thiết lập kích thước của những phần từ khác (như header) sử dụng đơn vị em
+
+
+                            body {
+                                font-family: Arial, sans-serif;
+                                font-size: 12px;
+                            }
+
+                            h1 {
+                                font-size: 1.5em;
+                            }
+
+                            h2 {
+                                font-size: 1.2em;
+                            }
+                            
+
+                            Khi thay đổi font-size của thẻ body, kích thước font của các thẻ h1, h2 sẽ tự động được điều chỉnh (bởi vì đơn vị em dựa theo kích thước của font của phần tử cha).
+
+                            Bây giờ, chúng ta sẽ thiết lập chức năng thay đổi kích thước font-size cho thẻ body
+                            
+
+                            Trong JavaScript, ta tạo ra:
+                            
+
+
+                            function chinhFontSize(fontSizeMoi) {
+                                return function() {
+                                    document.body.style.fontSize = fontSizeMoi + 'px';
+                                };
+                            }
+
+                            var size12 = chinhFontSize(12);
+                            var size14 = chinhFontSize(14);
+                            var size16 = chinhFontSize(16);
+                            
+
+                            size12, size14, và size16 bây giờ là những hàm sẽ thay đổi kích thước font chữ của body sang 12px, 14px hay 16px.
+
+                            Tạo ra các nút / liên kết với có thể click với HTML:
+                            
+
+
+                            <a href="#" id="size-12">12</a>
+                            <a href="#" id="size-14">14</a>
+                            <a href="#" id="size-16">16</a>
+                            
+
+                            Sử dụng JS DOM để gán hàm tương ứng cho id tương ứng:
+                            
+
+
+                            // Gán hàm thay đổi kích thước font-size
+                            // cho id tương ứng
+                            document.getElementById('size-12').onclick = size12;
+                            document.getElementById('size-14').onclick = size14;
+                            document.getElementById('size-16').onclick = size16;
+                            
+                            
+
+                            Tổng kết
+
+                            Như vậy mình vừa giới thiệu với bạn cơ bản về Closures trong JavaScript. Các bạn tự đọc / tìm hiểu thêm về closure trên Google vì sau này nó rất hữu ích nếu bạn làm chuyên sâu về lập trình web / lập trình Front end.
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like39" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- Footer -->

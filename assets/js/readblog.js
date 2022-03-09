@@ -202,6 +202,11 @@ function opendetail(index) {
             $('.musicblog38').play();
             $('.musicblog38').volume = 0.02;
             break;
+        case 39:
+            $('.blog__detail-39').style.display = 'block';
+            $('.musicblog39').play();
+            $('.musicblog39').volume = 0.02;
+            break;
     }
     
 }
@@ -246,6 +251,7 @@ function liked() {
     $('#like36').style.fontWeight = '900';
     $('#like37').style.fontWeight = '900';
     $('#like38').style.fontWeight = '900';
+    $('#like39').style.fontWeight = '900';
 
 
 }
@@ -585,7 +591,7 @@ const app = {
         },
         {
             index: 37,
-            like: -281,
+            like: -226,
             image: './assets/img/blog37.jpg',
             title: 'Prototype trong JavaSCript (Phần 2)',
             time: 'February 25, 2022',
@@ -593,11 +599,19 @@ const app = {
         },
         {
             index: 38,
-            like: -300,
+            like: -280,
             image: './assets/img/blog38.png',
             title: 'Closure trong JavaScript (Phần 1)',
             time: 'February 28, 2022',
             description: '...Các hàm lồng vào nhau có quyền truy cập vào các biến dược khai báo trong phạm vi bên ngoài của chúng....'
+        },
+        {
+            index: 39,
+            like: -361,
+            image: './assets/img/blog38.png',
+            title: 'Closure trong JavaScript (Phần 2)',
+            time: 'March 8, 2022',
+            description: '...Tương tự như trong lập trình hướng đối tượng, các đối tượng cho phép chúng ta gắn một vài dữ liệu với một hoặc nhiều phương thức bên trong.....'
         }
         
     ],
