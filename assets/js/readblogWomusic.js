@@ -267,7 +267,7 @@ const app = {
             like: -212,
             image: './assets/img/imgWomusic/blog13.jpg',
             title: 'nmyccđym (short ver.)',
-            time: 'March 9, 2022',
+            time: 'March 8, 2022',
             description: ''
         },
     ],
