@@ -115,6 +115,11 @@ function opendetail(index) {
             $('.musicblog21').play();
             $('.musicblog21').volume = 0.02;
             break;
+        case 22:
+            $('.blog__detail-22').style.display = 'block';
+            $('.musicblog22').play();
+            $('.musicblog22').volume = 0.02;
+            break;
     }
     
 }
@@ -142,6 +147,7 @@ function liked() {
     $('#like19').style.fontWeight = '900';
     $('#like20').style.fontWeight = '900';
     $('#like21').style.fontWeight = '900';
+    $('#like22').style.fontWeight = '900';
 
 
 
@@ -351,7 +357,7 @@ const app = {
         },
         {
             index: 19,
-            like: -212,
+            like: -156,
             image: './assets/img/imgWOMs/blog19.jpg',
             title: 'No Title',
             time: 'February 15, 2022',
@@ -359,7 +365,7 @@ const app = {
         },
         {
             index: 20,
-            like: -223,
+            like: -191,
             image: './assets/img/imgWOMs/blog20.jpg',
             title: 'A small gift from me for music lovers',
             time: 'February 27, 2022',
@@ -367,10 +373,18 @@ const app = {
         },
         {
             index: 21,
-            like: -269,
+            like: -224,
             image: './assets/img/imgWOMs/blog21.png',
             title: 'Good web icon for FE',
             time: 'March 6, 2022',
+            description: '......'
+        },
+        {
+            index: 22,
+            like: -300,
+            image: './assets/img/imgWOMs/blog22.jpg',
+            title: 'Happy birthday to me',
+            time: 'March 10, 2022',
             description: '......'
         }
     ],

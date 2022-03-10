@@ -264,7 +264,7 @@ const app = {
         },
         {
             index: 13,
-            like: -212,
+            like: -174,
             image: './assets/img/imgWomusic/blog13.jpg',
             title: 'nmyccđym (short ver.)',
             time: 'March 8, 2022',
