@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 351
+var count = 361
 
 
 //renderBlog 
@@ -381,7 +381,7 @@ const app = {
         },
         {
             index: 22,
-            like: -300,
+            like: -253,
             image: './assets/img/imgWOMs/blog22.jpg',
             title: 'Happy birthday to me',
             time: 'March 10, 2022',

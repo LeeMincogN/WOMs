@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 221
+    var count = 232
 
 //renderBlog 
 function opendetail(index) {
@@ -66,6 +66,11 @@ function opendetail(index) {
             $('.musicblog10').play();
             $('.musicblog10').volume = 0.02;
             break;
+        case 11:
+            $('.blog__detail-11').style.display = 'block';
+            $('.musicblog11').play();
+            $('.musicblog11').volume = 0.02;
+            break;
     }
     
 }
@@ -82,6 +87,7 @@ function liked() {
     $('#like8').style.fontWeight = '900';
     $('#like9').style.fontWeight = '900';
     $('#like10').style.fontWeight = '900';
+    $('#like11').style.fontWeight = '900';
 
 
 
@@ -226,6 +232,14 @@ const app = {
             image: './assets/img/imgVideos/blog10.png',
             title: 'Làm việc với mảng (Phần 2)',
             time: 'February 18, 2022',
+            description: 'Cùng thực hành các phương thức làm việc với mảng nhé!!!'
+        },
+        {
+            index: 11,
+            like: -212,
+            image: './assets/img/imgVideos/blog11.jpg',
+            title: 'Làm việc với mảng (Phần 3)',
+            time: 'March 3, 2022',
             description: 'Cùng thực hành các phương thức làm việc với mảng nhé!!!'
         }
     ],
