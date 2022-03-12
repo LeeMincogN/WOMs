@@ -81,6 +81,11 @@ function opendetail(index) {
             $('.musicblog13').play();
             $('.musicblog13').volume = 0.02;
             break;
+        case 14:
+            $('.blog__detail-14').style.display = 'block';
+            $('.musicblog14').play();
+            $('.musicblog14').volume = 0.02;
+            break;
     }
     
 }
@@ -100,6 +105,7 @@ function liked() {
     $('#like11').style.fontWeight = '900';
     $('#like12').style.fontWeight = '900';
     $('#like13').style.fontWeight = '900';
+    $('#like14').style.fontWeight = '900';
 
 
 
@@ -264,10 +270,18 @@ const app = {
         },
         {
             index: 13,
-            like: -174,
+            like: -100,
             image: './assets/img/imgWomusic/blog13.jpg',
             title: 'nmyccđym (short ver.)',
             time: 'March 8, 2022',
+            description: ''
+        },
+        {
+            index: 14,
+            like: -200,
+            image: './assets/img/imgWomusic/blog13.jpg',
+            title: 'TELĐAKTN',
+            time: 'March 12, 2022',
             description: ''
         },
     ],
