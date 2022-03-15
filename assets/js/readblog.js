@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 390
+var count = 412
 
 
 
@@ -207,6 +207,11 @@ function opendetail(index) {
             $('.musicblog39').play();
             $('.musicblog39').volume = 0.02;
             break;
+        case 40:
+            $('.blog__detail-40').style.display = 'block';
+            $('.musicblog40').play();
+            $('.musicblog40').volume = 0.02;
+            break;
     }
     
 }
@@ -252,6 +257,7 @@ function liked() {
     $('#like37').style.fontWeight = '900';
     $('#like38').style.fontWeight = '900';
     $('#like39').style.fontWeight = '900';
+    $('#like40').style.fontWeight = '900';
 
 
 }
@@ -612,6 +618,14 @@ const app = {
             title: 'Closure trong JavaScript (Phần 2)',
             time: 'March 8, 2022',
             description: '...Tương tự như trong lập trình hướng đối tượng, các đối tượng cho phép chúng ta gắn một vài dữ liệu với một hoặc nhiều phương thức bên trong.....'
+        },
+        {
+            index: 40,
+            like: -390,
+            image: './assets/img/blog40.png',
+            title: '"this" trong JavaScript (Phần 1)',
+            time: 'March 15, 2022',
+            description: '...trong JavaScript, chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy.....'
         }
         
     ],

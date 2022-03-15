@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 242
+    var count = 252
 
 //renderBlog 
 function opendetail(index) {
@@ -86,6 +86,11 @@ function opendetail(index) {
             $('.musicblog14').play();
             $('.musicblog14').volume = 0.02;
             break;
+        case 15:
+            $('.blog__detail-15').style.display = 'block';
+            $('.musicblog15').play();
+            $('.musicblog15').volume = 0.02;
+            break;
     }
     
 }
@@ -106,6 +111,7 @@ function liked() {
     $('#like12').style.fontWeight = '900';
     $('#like13').style.fontWeight = '900';
     $('#like14').style.fontWeight = '900';
+    $('#like15').style.fontWeight = '900';
 
 
 
@@ -278,10 +284,18 @@ const app = {
         },
         {
             index: 14,
-            like: -200,
+            like: -148,
             image: './assets/img/imgWomusic/blog14.jpg',
             title: 'TELĐAKTN',
             time: 'March 12, 2022',
+            description: ''
+        },
+        {
+            index: 15,
+            like: -214,
+            image: './assets/img/imgWomusic/blog15.jpg',
+            title: 'Chimsauu (acoustic ver.)',
+            time: 'March 15, 2022',
             description: ''
         },
     ],
