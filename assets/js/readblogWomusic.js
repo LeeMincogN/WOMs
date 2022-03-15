@@ -292,7 +292,7 @@ const app = {
         },
         {
             index: 15,
-            like: -214,
+            like: -224,
             image: './assets/img/imgWomusic/blog15.jpg',
             title: 'Chimsauu (acoustic ver.)',
             time: 'March 15, 2022',
