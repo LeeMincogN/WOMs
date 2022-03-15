@@ -284,7 +284,7 @@ const app = {
         },
         {
             index: 14,
-            like: -148,
+            like: -200,
             image: './assets/img/imgWomusic/blog14.jpg',
             title: 'TELĐAKTN',
             time: 'March 12, 2022',
