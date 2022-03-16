@@ -284,7 +284,7 @@ const app = {
         },
         {
             index: 14,
-            like: -200,
+            like: -180,
             image: './assets/img/imgWomusic/blog14.jpg',
             title: 'TELĐAKTN',
             time: 'March 12, 2022',
@@ -292,7 +292,7 @@ const app = {
         },
         {
             index: 15,
-            like: -224,
+            like: -154,
             image: './assets/img/imgWomusic/blog15.jpg',
             title: 'Chimsauu (acoustic ver.)',
             time: 'March 15, 2022',
