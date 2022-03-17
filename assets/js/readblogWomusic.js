@@ -91,6 +91,11 @@ function opendetail(index) {
             $('.musicblog15').play();
             $('.musicblog15').volume = 0.02;
             break;
+        case 16:
+            $('.blog__detail-16').style.display = 'block';
+            $('.musicblog16').play();
+            $('.musicblog16').volume = 0.02;
+            break;
     }
     
 }
@@ -112,6 +117,7 @@ function liked() {
     $('#like13').style.fontWeight = '900';
     $('#like14').style.fontWeight = '900';
     $('#like15').style.fontWeight = '900';
+    $('#like16').style.fontWeight = '900';
 
 
 
@@ -284,7 +290,7 @@ const app = {
         },
         {
             index: 14,
-            like: -180,
+            like: -161,
             image: './assets/img/imgWomusic/blog14.jpg',
             title: 'TELĐAKTN',
             time: 'March 12, 2022',
@@ -292,10 +298,18 @@ const app = {
         },
         {
             index: 15,
-            like: -154,
+            like: -132,
             image: './assets/img/imgWomusic/blog15.jpg',
             title: 'Chimsauu (acoustic ver.)',
             time: 'March 15, 2022',
+            description: ''
+        },
+        {
+            index: 16,
+            like: -226,
+            image: './assets/img/imgWomusic/blog16.jpg',
+            title: 'Vương (acoustic ver.)',
+            time: 'March 17, 2022',
             description: ''
         },
     ],

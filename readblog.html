@@ -2626,6 +2626,55 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="blog__detail-41">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/blog40.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>March 17, 2022</span>
+                        <div class="blog__detail-content-title">
+                            "this" trong JavaScript (Phần 2)
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Xin chào. Mình đã quay trờ lại với các bạn rồi đây. Cứ ngỡ rằng có thể bất tử trước cả rừng f0 nhưng điều gì đến cũng phải đến. Những ngày qua bị covid mình khá mệt nên đã không thể đăng bài tới cho các bạn được. Mấy ngày không làm được việc trong người khó chịu quá nên là hôm nay mặc dù vẫn mệt nhưng cũng khá hơn rồi nên phải mở máy để mang đến cho các bạn chủ đề mới luôn đây. <br>
+                            Hôm nay chúng ta sẽ tìm hiểu về this trong JavaSCript nhé. Một khái niệm nâng cao và tương đối quan trọng đòi hỏi các bạn phải nắm thật chắc. Vậy this là gì? Cách dùng và ý nghĩa của nó ra sao? Chúng ta cùng vào bài học ngay nhé!!! <br>
+                            <b>Định hình khái niệm</b> <br>
+                            Từ khóa this của JavaScript là một trong những khái niệm cơ bản nhưng cũng dễ gây nhầm lẫn nhất của ngôn ngữ này. Trong bài viết này, chúng ta sẽ dần dần tìm hiểu và làm sáng tỏ this, sao cho từ bây giờ, bạn không cần phải lo lắng về nó nữa. Chúng ta sẽ tìm hiểu cách sử dụng this một cách chính xác trong các tình huống khác nhau, kể cả những trường hợp nhạy cảm, nơi mà this rất khó nắm bắt. <br>
+                            Về cơ bản, chúng ta sử dụng this tương tự như cách mà chúng ta sử dụng đại từ nhân xưng trong tiếng Anh. Ví dụ câu tiếng Anh như sau: <br>
+                            <b>John is running fast because he is trying to catch the train.</b> <br>
+                            Đại từ nhân xưng "he" trong câu này, là để chỉ John. Chúng ta có thể viết nó lại như sau mà ý nghĩa không thay đổi: <br>
+                            John is running fast because John is trying to catch the train. <br>
+                            Tuy nhiên, chúng ta không cần thiết phải gọi lại John trong tình huống này, như vậy câu bị lặp lại và nghe không được hay lắm. Trong trường hợp này, chúng ta có thể dùng đại từ nhân xưng để thay thế, câu văn nghe sẽ hay hơn. <br>
+                            Cũng tương tự như vậy, trong JavaScript, chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy. <br>
+                            Chúng ta hãy xem xét ví dụ sau: <br>
+                            var person = {
+                                firstName: "Anh",
+                                lastName: "Tranngoc",
+                                fullName: function() {
+                                    // Việc sử dụng "this" cũng tương tự như việc sử dụng "he"
+                                    // trong câu tiếng Anh ở trên.
+                                    console.log(this.firstName + " " + this.lastName);
+                                    // Chúng ta cũng có thể viết thế này.
+                                    console.log(person.firstName + " " + person.lastName);
+                                }
+                            } <br>
+                            Nếu chúng ta sử dụng person.firstName và person.lastName như ví dụ ở trên, code của chúng ta có thể sẽ trở nên khó hiểu. Tất nhiên, nếu chỉ có code đơn giản như ví dụ trên thì nó sẽ chạy tốt. <br>
+                            Tuy nhiên, hãy thử tưởng tượng, sau một thời gian phát triển, code JavaScript của bạn đã khá lớn. Và chẳng biết vô tình hay cố ý, person ở trên là một biến cục bộ trong một hàm nào đó, và tồn tại một biến toàn cục khác cũng có tên là person. <br>
+                            Lúc này, nếu như có lỗi xảy ra, việc debug có thể khá khó khăn. Rất có thể, bạn sẽ mất kha khá thời gian thắc mắc xem, việc tham chiếu person.firstName có thể sẽ gọi đến thuộc tính firstName của biến toàn cục hay biến cục bộ khi có 2 biến với tên giống nhau. <br>
+                            Để tránh tự làm khó mình (và làm khó cả những người cùng team), chúng ta nên sử dụng từ khóa this, không chỉ vì sự thẩm mỹ mà còn vì sự chính xác. Việc sử dụng this làm code của chúng ta rõ ràng hơn, giống như đại từ nhân xưng trong tiếng Anh vậy. <br>
+                            Cũng giống như đại từ nhân xưng "he" dùng để chỉ các tiền đề (danh từ mà đại từ đó chỉ đến), từ khóa this của JavaScript cũng tương tự, được sử dụng để tham chiếu đến các đối tượng mà hàm (nơi mà this được sử dụng) bị ràng buộc. <br>
+                            Từ khóa this không chỉ tham chiếu đến đối tượng, mà nó còn chứa giá trị của đối tượng đó. Cũng như một đại từ nhân xưng, this có thể hiểu là một sự thay thế rõ ràng để tham chiếu đến các đối tượng ở trong ngữ cảnh (đối tượng tiền đề). Chúng ta sẽ tìm hiểu thêm về ngữ cảnh ở những phần sau. <br>
+                            <b>Kết thúc phần 1</b> <br>
+                            Okay vậy là 1 phần khá nhiều chữ đúng không nào? Mục đích là để chúng ta hiểu rằng this có ý nghĩa gì, nó sinh ra để nhằm mục đích gì. Bắt đầu ở phần sau chúng ta sẽ đi vào những điều cơ bản của nó và sử dụng this nhé. Xin chào và hẹn gặp lại!!! <br>
+                            
+                            
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like41" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- Footer -->

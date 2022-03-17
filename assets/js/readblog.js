@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 412
+var count = 430
 
 
 
@@ -212,6 +212,11 @@ function opendetail(index) {
             $('.musicblog40').play();
             $('.musicblog40').volume = 0.02;
             break;
+        case 41:
+            $('.blog__detail-41').style.display = 'block';
+            $('.musicblog41').play();
+            $('.musicblog41').volume = 0.02;
+            break;
     }
     
 }
@@ -258,6 +263,7 @@ function liked() {
     $('#like38').style.fontWeight = '900';
     $('#like39').style.fontWeight = '900';
     $('#like40').style.fontWeight = '900';
+    $('#like41').style.fontWeight = '900';
 
 
 }
@@ -621,10 +627,18 @@ const app = {
         },
         {
             index: 40,
-            like: -333,
+            like: -289,
             image: './assets/img/blog40.png',
             title: '"this" trong JavaScript (Phần 1)',
             time: 'March 15, 2022',
+            description: '...trong JavaScript, chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy.....'
+        },
+        {
+            index: 41,
+            like: -400,
+            image: './assets/img/blog40.png',
+            title: '"this" trong JavaScript (Phần 2)',
+            time: 'March 17, 2022',
             description: '...trong JavaScript, chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy.....'
         }
         
