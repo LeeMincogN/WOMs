@@ -306,7 +306,7 @@ const app = {
         },
         {
             index: 16,
-            like: -226,
+            like: -178,
             image: './assets/img/imgWomusic/blog16.jpg',
             title: 'Vương (acoustic ver.)',
             time: 'March 17, 2022',
