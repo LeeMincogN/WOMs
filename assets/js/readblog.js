@@ -635,7 +635,7 @@ const app = {
         },
         {
             index: 41,
-            like: -350,
+            like: -320,
             image: './assets/img/blog40.png',
             title: '"this" trong JavaScript (Phần 2)',
             time: 'March 17, 2022',

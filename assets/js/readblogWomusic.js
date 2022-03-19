@@ -298,7 +298,7 @@ const app = {
         },
         {
             index: 15,
-            like: -132,
+            like: -111,
             image: './assets/img/imgWomusic/blog15.jpg',
             title: 'Chimsauu (acoustic ver.)',
             time: 'March 15, 2022',
@@ -306,7 +306,7 @@ const app = {
         },
         {
             index: 16,
-            like: -178,
+            like: -141,
             image: './assets/img/imgWomusic/blog16.jpg',
             title: 'Vương (acoustic ver.)',
             time: 'March 17, 2022',
