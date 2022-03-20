@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 430
+var count = 441
 
 
 
@@ -217,6 +217,11 @@ function opendetail(index) {
             $('.musicblog41').play();
             $('.musicblog41').volume = 0.02;
             break;
+        case 42:
+            $('.blog__detail-42').style.display = 'block';
+            $('.musicblog42').play();
+            $('.musicblog42').volume = 0.02;
+            break;
     }
     
 }
@@ -264,6 +269,7 @@ function liked() {
     $('#like39').style.fontWeight = '900';
     $('#like40').style.fontWeight = '900';
     $('#like41').style.fontWeight = '900';
+    $('#like42').style.fontWeight = '900';
 
 
 }
@@ -640,6 +646,14 @@ const app = {
             title: '"this" trong JavaScript (Phần 2)',
             time: 'March 17, 2022',
             description: '...trong JavaScript, chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy.....'
+        },
+        {
+            index: 42,
+            like: -400,
+            image: './assets/img/blog42.jpg',
+            title: 'Làm chủ thuộc tính Float trong CSS',
+            time: 'March 20, 2022',
+            description: '...từ "float" có nghĩa là "nổi". Một trang HTML thông thường được trình bày theo dạng flow, tức là giống như một văn bản vậy, từng đoạn 1 xếp chồng lên nhau, cái nào viết trước nằm ở trên...'
         }
         
     ],
