@@ -96,6 +96,11 @@ function opendetail(index) {
             $('.musicblog16').play();
             $('.musicblog16').volume = 0.02;
             break;
+        case 17:
+            $('.blog__detail-17').style.display = 'block';
+            $('.musicblog17').play();
+            $('.musicblog17').volume = 0.02;
+            break;
     }
     
 }
@@ -118,6 +123,7 @@ function liked() {
     $('#like14').style.fontWeight = '900';
     $('#like15').style.fontWeight = '900';
     $('#like16').style.fontWeight = '900';
+    $('#like17').style.fontWeight = '900';
 
 
 
@@ -298,7 +304,7 @@ const app = {
         },
         {
             index: 15,
-            like: -111,
+            like: -89,
             image: './assets/img/imgWomusic/blog15.jpg',
             title: 'Chimsauu (acoustic ver.)',
             time: 'March 15, 2022',
@@ -306,10 +312,18 @@ const app = {
         },
         {
             index: 16,
-            like: -141,
+            like: -120,
             image: './assets/img/imgWomusic/blog16.jpg',
             title: 'Vương (acoustic ver.)',
             time: 'March 17, 2022',
+            description: ''
+        },
+        {
+            index: 17,
+            like: -220,
+            image: './assets/img/imgWomusic/blog17.jpg',
+            title: 'khicodonemnhoai (acoustic ver.)',
+            time: 'March 20, 2022',
             description: ''
         },
     ],
