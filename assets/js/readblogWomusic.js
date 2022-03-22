@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 252
+    var count = 269
 
 //renderBlog 
 function opendetail(index) {
@@ -320,7 +320,7 @@ const app = {
         },
         {
             index: 17,
-            like: -220,
+            like: -180,
             image: './assets/img/imgWomusic/blog17.jpg',
             title: 'khicodonemnhoai (acoustic ver.)',
             time: 'March 20, 2022',

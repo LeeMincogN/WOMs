@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 361
+var count = 379
 
 
 //renderBlog 
@@ -120,6 +120,11 @@ function opendetail(index) {
             $('.musicblog22').play();
             $('.musicblog22').volume = 0.02;
             break;
+        case 23:
+            $('.blog__detail-23').style.display = 'block';
+            $('.musicblog23').play();
+            $('.musicblog23').volume = 0.02;
+            break;
     }
     
 }
@@ -148,6 +153,7 @@ function liked() {
     $('#like20').style.fontWeight = '900';
     $('#like21').style.fontWeight = '900';
     $('#like22').style.fontWeight = '900';
+    $('#like23').style.fontWeight = '900';
 
 
 
@@ -381,10 +387,18 @@ const app = {
         },
         {
             index: 22,
-            like: -253,
+            like: -200,
             image: './assets/img/imgWOMs/blog22.jpg',
             title: 'Happy birthday to me',
             time: 'March 10, 2022',
+            description: '......'
+        },
+        {
+            index: 23,
+            like: -320,
+            image: './assets/img/imgWOMs/blog23.jpg',
+            title: 'Lần đầu làm F0...',
+            time: 'March 21, 2022',
             description: '......'
         }
     ],

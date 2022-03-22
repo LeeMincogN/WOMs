@@ -641,7 +641,7 @@ const app = {
         },
         {
             index: 41,
-            like: -320,
+            like: -310,
             image: './assets/img/blog40.png',
             title: '"this" trong JavaScript (Phần 2)',
             time: 'March 17, 2022',
@@ -649,7 +649,7 @@ const app = {
         },
         {
             index: 42,
-            like: -400,
+            like: -350,
             image: './assets/img/blog42.jpg',
             title: 'Làm chủ thuộc tính Float trong CSS',
             time: 'March 20, 2022',
