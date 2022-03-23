@@ -101,6 +101,11 @@ function opendetail(index) {
             $('.musicblog17').play();
             $('.musicblog17').volume = 0.02;
             break;
+        case 18:
+            $('.blog__detail-18').style.display = 'block';
+            $('.musicblog18').play();
+            $('.musicblog18').volume = 0.02;
+            break;
     }
     
 }
@@ -124,6 +129,7 @@ function liked() {
     $('#like15').style.fontWeight = '900';
     $('#like16').style.fontWeight = '900';
     $('#like17').style.fontWeight = '900';
+    $('#like18').style.fontWeight = '900';
 
 
 
@@ -324,6 +330,14 @@ const app = {
             image: './assets/img/imgWomusic/blog17.jpg',
             title: 'khicodonemnhoai (acoustic ver.)',
             time: 'March 20, 2022',
+            description: ''
+        },
+        {
+            index: 18,
+            like: -221,
+            image: './assets/img/imgWomusic/blog18.jpg',
+            title: 'anhdaquenobencanhem (acoustic ver.)',
+            time: 'March 22, 2022',
             description: ''
         },
     ],
