@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
+#loader {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+  }
+  #stringPreloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  }
+  #stringPreloader {
+  -webkit-animation: spinner 2.5s infinite linear;
+  animation: spinner 2.5s infinite linear
+  }
+  @-webkit-keyframes spinner {
+  0% {
+  -webkit-transform: rotate(0);
+  transform: rotate(0)
+  }
+  100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg)
+  }
+  }
+  @keyframes spinner {
+  0% {
+  -webkit-transform: rotate(0);
+  transform: rotate(0)
+  }
+  100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg)
+  }
+  }
+  
+
 html {
     font-size: 62.5%;
     line-height: 1.5;
