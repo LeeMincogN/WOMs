@@ -125,6 +125,11 @@ function opendetail(index) {
             $('.musicblog23').play();
             $('.musicblog23').volume = 0.02;
             break;
+        case 24:
+            $('.blog__detail-24').style.display = 'block';
+            $('.musicblog24').play();
+            $('.musicblog24').volume = 0.02;
+            break;
     }
     
 }
@@ -154,6 +159,7 @@ function liked() {
     $('#like21').style.fontWeight = '900';
     $('#like22').style.fontWeight = '900';
     $('#like23').style.fontWeight = '900';
+    $('#like24').style.fontWeight = '900';
 
 
 
@@ -395,10 +401,18 @@ const app = {
         },
         {
             index: 23,
-            like: -320,
+            like: -280,
             image: './assets/img/imgWOMs/blog23.jpg',
             title: 'Lần đầu làm F0...',
             time: 'March 21, 2022',
+            description: '......'
+        },
+        {
+            index: 24,
+            like: -370,
+            image: './assets/img/imgWOMs/blog24.jpg',
+            title: 'Chính thức...',
+            time: 'March 25, 2022',
             description: '......'
         }
     ],
