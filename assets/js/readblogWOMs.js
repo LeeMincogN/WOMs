@@ -409,7 +409,7 @@ const app = {
         },
         {
             index: 24,
-            like: -350,
+            like: -320,
             image: './assets/img/imgWOMs/blog24.jpg',
             title: 'Chính thức...',
             time: 'March 25, 2022',
