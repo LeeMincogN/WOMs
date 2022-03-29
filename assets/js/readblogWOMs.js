@@ -130,6 +130,11 @@ function opendetail(index) {
             $('.musicblog24').play();
             $('.musicblog24').volume = 0.02;
             break;
+        case 25:
+            $('.blog__detail-25').style.display = 'block';
+            $('.musicblog25').play();
+            $('.musicblog25').volume = 0.02;
+            break;
     }
     
 }
@@ -160,6 +165,7 @@ function liked() {
     $('#like22').style.fontWeight = '900';
     $('#like23').style.fontWeight = '900';
     $('#like24').style.fontWeight = '900';
+    $('#like25').style.fontWeight = '900';
 
 
 
@@ -409,10 +415,18 @@ const app = {
         },
         {
             index: 24,
-            like: -320,
+            like: -300,
             image: './assets/img/imgWOMs/blog24.jpg',
             title: 'Chính thức...',
             time: 'March 25, 2022',
+            description: '......'
+        },
+        {
+            index: 25,
+            like: -351,
+            image: './assets/img/imgWOMs/blog25.png',
+            title: 'Chính thức...',
+            time: 'March 28, 2022',
             description: '......'
         }
     ],
