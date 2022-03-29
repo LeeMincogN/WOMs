@@ -222,6 +222,11 @@ function opendetail(index) {
             $('.musicblog42').play();
             $('.musicblog42').volume = 0.02;
             break;
+        case 43:
+            $('.blog__detail-43').style.display = 'block';
+            $('.musicblog43').play();
+            $('.musicblog43').volume = 0.02;
+            break;
     }
     
 }
@@ -270,6 +275,7 @@ function liked() {
     $('#like40').style.fontWeight = '900';
     $('#like41').style.fontWeight = '900';
     $('#like42').style.fontWeight = '900';
+    $('#like43').style.fontWeight = '900';
 
 
 }
