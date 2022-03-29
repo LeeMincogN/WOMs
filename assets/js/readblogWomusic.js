@@ -326,7 +326,7 @@ const app = {
         },
         {
             index: 17,
-            like: -180,
+            like: -154,
             image: './assets/img/imgWomusic/blog17.jpg',
             title: 'khicodonemnhoai (acoustic ver.)',
             time: 'March 20, 2022',
@@ -334,7 +334,7 @@ const app = {
         },
         {
             index: 18,
-            like: -221,
+            like: -184,
             image: './assets/img/imgWomusic/blog18.jpg',
             title: 'anhdaquenobencanhem (acoustic ver.)',
             time: 'March 22, 2022',
