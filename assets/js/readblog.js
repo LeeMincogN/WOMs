@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 441
+var count = 462
 
 
 
@@ -654,6 +654,14 @@ const app = {
             title: 'Làm chủ thuộc tính Float trong CSS',
             time: 'March 20, 2022',
             description: '...từ "float" có nghĩa là "nổi". Một trang HTML thông thường được trình bày theo dạng flow, tức là giống như một văn bản vậy, từng đoạn 1 xếp chồng lên nhau, cái nào viết trước nằm ở trên...'
+        },
+        {
+            index: 43,
+            like: -420,
+            image: './assets/img/blog43.png',
+            title: 'Năm cách để ẩn các phần tử trong CSS (Phần 1)',
+            time: 'March 28, 2022',
+            description: '...bạn định sử dụng thuộc tính opacity để ẩn hoàn toàn khỏi màn hình – thật tiếc, điều này là không thể. Phần tử và tất cả nội dung của nó sẽ vẫn được browser hiển thị (hiển thị trắng)...'
         }
         
     ],

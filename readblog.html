@@ -2719,6 +2719,67 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="blog__detail-43">
+                    <div class="blog__detail-img">
+                        <img src="./assets/img/blog43.png" alt="ảnh cây cối">
+                    </div>
+                    <div class="blog__detail-content">
+                        <span>March 28, 2022</span>
+                        <div class="blog__detail-content-title">
+                            Năm cách để ẩn các phần tử trong CSS (Phần 1)
+                        </div>
+                        <div class="blog__detail-content-text">
+                            Chào các bạn. Sau bao ngày bận rộn công việc cá nhân thì mình đã quay trở lại với các bạn rồi đây. Hôm nay mình sẽ mang đến cho các bạn một phần kiến thức rất thú vị và cũng quan trọng có thể được hỏi trong phỏng vấn sau này đó là các cách để có thẻ ẩn một phần tử trong css. Vậy giờ chúng ta cùng vào bài ngay thôi!!! <br>
+                            <b>Lời nói đầu</b> <br>
+                            Có nhiều cách để ẩn một phần tử trong CSS. Bạn có thể ẩn nó bằng cách đặt opacity xuống 0, visibility sang hidden, display sang none hoặc bằng cách đặt các giá trị cực trị cho vị trí tuyệt đối.
+
+                            Bạn có bao giờ tự hỏi tại sao chúng ta có rất nhiều kỹ thuật giấu một phần tử khi tất cả chúng dường như cùng làm một điều tương tự ? <br>
+
+                            Tất cả các phương pháp này thực ra có khác nhau một chút và sự khác biệt này chỉ ra mỗi phương pháp nên được sử dụng trong một trường hợp cụ thể. Hướng dẫn này sẽ đề cập đến những điểm khác biệt nhỏ mà bạn cần lưu ý khi ẩn phần tử bằng cách sử dụng bất kỳ phương pháp nào ở trên.
+
+                            Hướng dẫn này sẽ đề cập đến những điểm khác biệt nhỏ mà bạn cần lưu ý khi ẩn phần tử bằng cách sử dụng bất kỳ phương pháp nào ở trên. <br>
+                            <b>Nội dung</b> <br>
+                            <b>Opacity</b> <br>
+                            Thuộc tính opacity là để thiết lập transparency (độ trong suốt ) của phần tử. Nó không được thiết kế để thay đổi khung giới hạn của phần tử dưới bất kỳ hính thức nào.
+
+                            Điều này có nghĩa là cài đặt opacity xuống 0 chỉ giấu đi phần tử một cách trực quan. Phần tử vẫn chiếm vị trí của nó và ảnh hưởng đến bố cục của trang web. Nó cũng sẽ phản hồi lại với tương tác của người dùng.
+
+                            .hide {
+                                opacity: 0;
+                            } <br>
+
+                            Nếu bạn định sử dụng thuộc tính opacity để ẩn hoàn toàn khỏi màn hình – thật tiếc, điều này là không thể. Phần tử và tất cả nội dung của nó sẽ vẫn được browser hiển thị (hiển thị trắng), giống như tất cả các phần tử khác trên trang web. Nói cách khác, phần tử vẫn hoạt động (vẫn bắt được các sự tương tác từ user) như cách nó khi chưa bị làm mờ.
+
+                            Chính vì thế tôi khuyến nghị nên sử dụng thuộc tính opacity tạo ra các hiệu ứng sinh động. <br>
+
+                            Hãy xem demo
+
+                            Khi bạn di chuột qua khối thứ hai bị ẩn, phần tử sẽ chuyển đổi trôi chảy từ trạng thái trong suốt hoàn toàn sang rõ ràng. Và khi chuột ko còn ở khối thứ 2 nữa thì khối này bị ẩn đi. Điều này chứng tỏ ràng, khối bị ẩn đi vẫn có thể tiếp nhận các sự tương tác từ user. <br>
+                            <b>Visibility</b> <br>
+                            Thuộc tính tiếp theo trong danh sách là Visibility khả năng hiển thị. Cài đặt thuộc tính này sẽ làm ẩn phần tử .
+
+                            Cũng giống như thuộc tính opacity, phần tử ẩn sẽ vẫn ảnh hưởng đến bố cục của trang web. Sự khác biệt duy nhất là thời gian này nó sẽ không nắm bắt bất kỳ tương tác nào của người dùng khi bị ẩn khỏi người dùng.
+
+                            Thuộc tính này cũng có thể làm được các hình ảnh động miễn là các trạng thái ban đầu và cuối cùng có các giá trị khác nhau. Điều này bảo đảm rằng quá trình chuyển đổi giữa các trạng thái hiển thị có thể được trơn tru thay vì đột ngột.
+
+                            .hide {
+                                visibility: hidden;
+                            } <br>
+
+                            Demi sự khác nhau giữa Visibility và Opacity <br>
+
+                            Lưu ý rằng các phần tử con của một phần tử với visibility đặt ở hidden vẫn có thể vẫn hiển thị nếu thuộc tính visibility của chúng được đặt về visible.
+                            Hãy thử di chuột qua phần tử ẩn và không nằm trong đoạn văn bên, bạn sẽ thấy con trỏ truột của bạn không thay đổi thành con trỏ hình ngón tay.
+                            Hơn nữa, nếu bạn cố nhấp vào phần tử, các nhấp chuột của bạn sẽ không được tạo ra bất kì sự kiện nào. <br>
+                            Okay vậy là vừa rồi chúng ta đã nắm qua được một số cách và có thể phân biệt giữa chúng rồi đúng không nào. Ở phần tiếp theo mình sẽ giới thiệu những cách còn lại giúp chúng ta có cái nhìn tổng quan nhất về nó nhé. Xin chào và hẹn gặp lại!!! <br>
+
+                        </div>
+                        <div style="font-size: 16px; float: right; font-weight: 700;">
+                            Yêu thích <i id="like43" style="margin-left: 8px;" onclick="liked()" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- Footer -->
