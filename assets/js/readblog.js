@@ -663,7 +663,7 @@ const app = {
         },
         {
             index: 43,
-            like: -433,
+            like: -374,
             image: './assets/img/blog43.png',
             title: 'Năm cách để ẩn các phần tử trong CSS (Phần 1)',
             time: 'March 28, 2022',

@@ -334,7 +334,7 @@ const app = {
         },
         {
             index: 18,
-            like: -184,
+            like: -167,
             image: './assets/img/imgWomusic/blog18.jpg',
             title: 'anhdaquenobencanhem (acoustic ver.)',
             time: 'March 22, 2022',

@@ -407,7 +407,7 @@ const app = {
         },
         {
             index: 23,
-            like: -280,
+            like: -241,
             image: './assets/img/imgWOMs/blog23.jpg',
             title: 'Lần đầu làm F0...',
             time: 'March 21, 2022',
@@ -415,7 +415,7 @@ const app = {
         },
         {
             index: 24,
-            like: -300,
+            like: -280,
             image: './assets/img/imgWOMs/blog24.jpg',
             title: 'Chính thức...',
             time: 'March 25, 2022',
