@@ -135,6 +135,11 @@ function opendetail(index) {
             $('.musicblog25').play();
             $('.musicblog25').volume = 0.02;
             break;
+        case 26:
+            $('.blog__detail-26').style.display = 'block';
+            $('.musicblog26').play();
+            $('.musicblog26').volume = 0.02;
+            break;
     }
     
 }
@@ -166,6 +171,7 @@ function liked() {
     $('#like23').style.fontWeight = '900';
     $('#like24').style.fontWeight = '900';
     $('#like25').style.fontWeight = '900';
+    $('#like26').style.fontWeight = '900';
 
 
 
@@ -415,7 +421,7 @@ const app = {
         },
         {
             index: 24,
-            like: -280,
+            like: -267,
             image: './assets/img/imgWOMs/blog24.jpg',
             title: 'Chính thức...',
             time: 'March 25, 2022',
@@ -423,10 +429,18 @@ const app = {
         },
         {
             index: 25,
-            like: -351,
+            like: -280,
             image: './assets/img/imgWOMs/blog25.png',
             title: 'Chính thức...',
             time: 'March 28, 2022',
+            description: '......'
+        },
+        {
+            index: 26,
+            like: -300,
+            image: './assets/img/imgWOMs/blog26.jpg',
+            title: 'Nỗi buồn thật trong ngày nói dối',
+            time: 'April 2, 2022',
             description: '......'
         }
     ],

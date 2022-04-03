@@ -318,7 +318,7 @@ const app = {
         },
         {
             index: 16,
-            like: -120,
+            like: -111,
             image: './assets/img/imgWomusic/blog16.jpg',
             title: 'Vương (acoustic ver.)',
             time: 'March 17, 2022',
@@ -334,7 +334,7 @@ const app = {
         },
         {
             index: 18,
-            like: -167,
+            like: -141,
             image: './assets/img/imgWomusic/blog18.jpg',
             title: 'anhdaquenobencanhem (acoustic ver.)',
             time: 'March 22, 2022',
