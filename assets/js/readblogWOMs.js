@@ -429,7 +429,7 @@ const app = {
         },
         {
             index: 25,
-            like: -280,
+            like: -276,
             image: './assets/img/imgWOMs/blog25.png',
             title: 'Chính thức...',
             time: 'March 28, 2022',
@@ -437,7 +437,7 @@ const app = {
         },
         {
             index: 26,
-            like: -300,
+            like: -241,
             image: './assets/img/imgWOMs/blog26.jpg',
             title: 'Nỗi buồn thật trong ngày nói dối',
             time: 'April 2, 2022',
