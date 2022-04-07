@@ -655,7 +655,7 @@ const app = {
         },
         {
             index: 42,
-            like: -350,
+            like: -341,
             image: './assets/img/blog42.jpg',
             title: 'Làm chủ thuộc tính Float trong CSS',
             time: 'March 20, 2022',
@@ -663,7 +663,7 @@ const app = {
         },
         {
             index: 43,
-            like: -374,
+            like: -300,
             image: './assets/img/blog43.png',
             title: 'Năm cách để ẩn các phần tử trong CSS (Phần 1)',
             time: 'March 28, 2022',

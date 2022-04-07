@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 269
+    var count = 290
 
 //renderBlog 
 function opendetail(index) {
@@ -106,6 +106,11 @@ function opendetail(index) {
             $('.musicblog18').play();
             $('.musicblog18').volume = 0.02;
             break;
+        case 19:
+            $('.blog__detail-19').style.display = 'block';
+            $('.musicblog19').play();
+            $('.musicblog19').volume = 0.02;
+            break;
     }
     
 }
@@ -130,6 +135,7 @@ function liked() {
     $('#like16').style.fontWeight = '900';
     $('#like17').style.fontWeight = '900';
     $('#like18').style.fontWeight = '900';
+    $('#like19').style.fontWeight = '900';
 
 
 
@@ -338,6 +344,14 @@ const app = {
             image: './assets/img/imgWomusic/blog18.jpg',
             title: 'anhdaquenobencanhem (acoustic ver.)',
             time: 'March 22, 2022',
+            description: ''
+        },
+        {
+            index: 19,
+            like: -259,
+            image: './assets/img/imgWomusic/blog19.jpg',
+            title: 'Mặt trời của em (short ver.)',
+            time: 'April 7, 2022',
             description: ''
         },
     ],
