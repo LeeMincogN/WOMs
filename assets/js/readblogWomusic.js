@@ -348,7 +348,7 @@ const app = {
         },
         {
             index: 19,
-            like: -259,
+            like: -200,
             image: './assets/img/imgWomusic/blog19.jpg',
             title: 'Mặt trời của em (short ver.)',
             time: 'April 7, 2022',
