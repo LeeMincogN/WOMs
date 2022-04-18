@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 290
+    var count = 330
 
 //renderBlog 
 function opendetail(index) {
@@ -111,6 +111,11 @@ function opendetail(index) {
             $('.musicblog19').play();
             $('.musicblog19').volume = 0.02;
             break;
+        case 20:
+            $('.blog__detail-20').style.display = 'block';
+            $('.musicblog20').play();
+            $('.musicblog20').volume = 0.02;
+            break;
     }
     
 }
@@ -136,6 +141,7 @@ function liked() {
     $('#like17').style.fontWeight = '900';
     $('#like18').style.fontWeight = '900';
     $('#like19').style.fontWeight = '900';
+    $('#like20').style.fontWeight = '900';
 
 
 
@@ -352,6 +358,14 @@ const app = {
             image: './assets/img/imgWomusic/blog19.jpg',
             title: 'Mặt trời của em (short ver.)',
             time: 'April 7, 2022',
+            description: ''
+        },
+        {
+            index: 20,
+            like: -301,
+            image: './assets/img/imgWomusic/blog20.jpg',
+            title: 'Hạnh phúc mới (short ver.)',
+            time: 'April 18, 2022',
             description: ''
         },
     ],
