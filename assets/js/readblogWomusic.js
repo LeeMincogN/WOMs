@@ -362,7 +362,7 @@ const app = {
         },
         {
             index: 20,
-            like: -301,
+            like: -255,
             image: './assets/img/imgWomusic/blog20.jpg',
             title: 'Hạnh phúc mới (short ver.)',
             time: 'April 18, 2022',
