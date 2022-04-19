@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 462
+var count = 475
 
 
 
@@ -227,6 +227,11 @@ function opendetail(index) {
             $('.musicblog43').play();
             $('.musicblog43').volume = 0.02;
             break;
+        case 44:
+            $('.blog__detail-44').style.display = 'block';
+            $('.musicblog44').play();
+            $('.musicblog44').volume = 0.02;
+            break;
     }
     
 }
@@ -276,6 +281,7 @@ function liked() {
     $('#like41').style.fontWeight = '900';
     $('#like42').style.fontWeight = '900';
     $('#like43').style.fontWeight = '900';
+    $('#like44').style.fontWeight = '900';
 
 
 }
@@ -667,6 +673,14 @@ const app = {
             image: './assets/img/blog43.png',
             title: 'Năm cách để ẩn các phần tử trong CSS (Phần 1)',
             time: 'March 28, 2022',
+            description: '...bạn định sử dụng thuộc tính opacity để ẩn hoàn toàn khỏi màn hình – thật tiếc, điều này là không thể. Phần tử và tất cả nội dung của nó sẽ vẫn được browser hiển thị (hiển thị trắng)...'
+        },
+        {
+            index: 44,
+            like: -453,
+            image: './assets/img/blog44.png',
+            title: 'Năm cách để ẩn các phần tử trong CSS (Phần 2)',
+            time: 'April 19, 2022',
             description: '...bạn định sử dụng thuộc tính opacity để ẩn hoàn toàn khỏi màn hình – thật tiếc, điều này là không thể. Phần tử và tất cả nội dung của nó sẽ vẫn được browser hiển thị (hiển thị trắng)...'
         }
         
