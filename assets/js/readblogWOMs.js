@@ -140,6 +140,11 @@ function opendetail(index) {
             $('.musicblog26').play();
             $('.musicblog26').volume = 0.02;
             break;
+        case 27:
+            $('.blog__detail-27').style.display = 'block';
+            $('.musicblog27').play();
+            $('.musicblog27').volume = 0.02;
+            break;
     }
     
 }
@@ -172,6 +177,7 @@ function liked() {
     $('#like24').style.fontWeight = '900';
     $('#like25').style.fontWeight = '900';
     $('#like26').style.fontWeight = '900';
+    $('#like27').style.fontWeight = '900';
 
 
 
@@ -441,6 +447,14 @@ const app = {
             image: './assets/img/imgWOMs/blog26.jpg',
             title: 'Nỗi buồn thật trong ngày nói dối',
             time: 'April 2, 2022',
+            description: '......'
+        },
+        {
+            index: 27,
+            like: -354,
+            image: './assets/img/imgWOMs/blog27.jpg',
+            title: 'Comebackk!!!',
+            time: 'April 27, 2022',
             description: '......'
         }
     ],
