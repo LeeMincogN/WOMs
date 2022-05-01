@@ -451,7 +451,7 @@ const app = {
         },
         {
             index: 27,
-            like: -354,
+            like: -300,
             image: './assets/img/imgWOMs/blog27.jpg',
             title: 'Comebackk!!!',
             time: 'April 27, 2022',

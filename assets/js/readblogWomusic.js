@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 341
+    var count = 365
 
 //renderBlog 
 function opendetail(index) {
@@ -116,6 +116,11 @@ function opendetail(index) {
             $('.musicblog20').play();
             $('.musicblog20').volume = 0.02;
             break;
+        case 21:
+            $('.blog__detail-21').style.display = 'block';
+            $('.musicblog21').play();
+            $('.musicblog21').volume = 0.02;
+            break;
     }
     
 }
@@ -142,6 +147,7 @@ function liked() {
     $('#like18').style.fontWeight = '900';
     $('#like19').style.fontWeight = '900';
     $('#like20').style.fontWeight = '900';
+    $('#like21').style.fontWeight = '900';
 
 
 
@@ -366,6 +372,14 @@ const app = {
             image: './assets/img/imgWomusic/blog20.jpg',
             title: 'Hạnh phúc mới (short ver.)',
             time: 'April 18, 2022',
+            description: ''
+        },
+        {
+            index: 21,
+            like: -350,
+            image: './assets/img/imgWomusic/blog21.jpg',
+            title: 'Chẳng nói nên lời (Beat ver.)',
+            time: 'May 1, 2022',
             description: ''
         },
     ],
