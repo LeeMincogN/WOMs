@@ -376,7 +376,7 @@ const app = {
         },
         {
             index: 21,
-            like: -350,
+            like: -490,
             image: './assets/img/imgWomusic/blog21.jpg',
             title: 'Chẳng nói nên lời (Beat ver.)',
             time: 'May 1, 2022',
