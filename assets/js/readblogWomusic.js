@@ -121,6 +121,11 @@ function opendetail(index) {
             $('.musicblog21').play();
             $('.musicblog21').volume = 0.02;
             break;
+        case 22:
+            $('.blog__detail-22').style.display = 'block';
+            $('.musicblog22').play();
+            $('.musicblog22').volume = 0.02;
+            break;
     }
     
 }
@@ -148,6 +153,7 @@ function liked() {
     $('#like19').style.fontWeight = '900';
     $('#like20').style.fontWeight = '900';
     $('#like21').style.fontWeight = '900';
+    $('#like22').style.fontWeight = '900';
 
 
 
@@ -376,10 +382,18 @@ const app = {
         },
         {
             index: 21,
-            like: -490,
+            like: -290,
             image: './assets/img/imgWomusic/blog21.jpg',
             title: 'Chẳng nói nên lời (Beat ver.)',
             time: 'May 1, 2022',
+            description: ''
+        },
+        {
+            index: 22,
+            like: -342,
+            image: './assets/img/imgWomusic/blog22.jpg',
+            title: 'MTCE - TY (Guitar ver.)',
+            time: 'May 3, 2022',
             description: ''
         },
     ],
