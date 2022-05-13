@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 379
+var count = 410
 
 
 //renderBlog 
@@ -145,6 +145,11 @@ function opendetail(index) {
             $('.musicblog27').play();
             $('.musicblog27').volume = 0.02;
             break;
+        case 28:
+            $('.blog__detail-28').style.display = 'block';
+            $('.musicblog28').play();
+            $('.musicblog28').volume = 0.02;
+            break;
     }
     
 }
@@ -178,6 +183,7 @@ function liked() {
     $('#like25').style.fontWeight = '900';
     $('#like26').style.fontWeight = '900';
     $('#like27').style.fontWeight = '900';
+    $('#like28').style.fontWeight = '900';
 
 
 
@@ -455,6 +461,14 @@ const app = {
             image: './assets/img/imgWOMs/blog27.jpg',
             title: 'Comebackk!!!',
             time: 'April 27, 2022',
+            description: '......'
+        },
+        {
+            index: 28,
+            like: -350,
+            image: './assets/img/imgWOMs/blog28.jpg',
+            title: 'Delayyy!!!',
+            time: 'March 13, 2022',
             description: '......'
         }
     ],
