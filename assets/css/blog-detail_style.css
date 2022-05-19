@@ -234,6 +234,11 @@ body {
     animation: appear ease-in-out 3s;
 }
 
+.blog__detail-45 {
+    display: none;
+    animation: appear ease-in-out 3s;
+}
+
 
 
 

@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 475
+var count = 500
 
 
 
@@ -232,6 +232,11 @@ function opendetail(index) {
             $('.musicblog44').play();
             $('.musicblog44').volume = 0.02;
             break;
+        case 45:
+            $('.blog__detail-45').style.display = 'block';
+            $('.musicblog45').play();
+            $('.musicblog45').volume = 0.02;
+            break;
     }
     
 }
@@ -282,6 +287,7 @@ function liked() {
     $('#like42').style.fontWeight = '900';
     $('#like43').style.fontWeight = '900';
     $('#like44').style.fontWeight = '900';
+    $('#like45').style.fontWeight = '900';
 
 
 }
@@ -677,11 +683,19 @@ const app = {
         },
         {
             index: 44,
-            like: -400,
+            like: -375,
             image: './assets/img/blog43.png',
             title: 'Năm cách để ẩn các phần tử trong CSS (Phần 2)',
             time: 'April 19, 2022',
             description: '...bạn định sử dụng thuộc tính opacity để ẩn hoàn toàn khỏi màn hình – thật tiếc, điều này là không thể. Phần tử và tất cả nội dung của nó sẽ vẫn được browser hiển thị (hiển thị trắng)...'
+        },
+        {
+            index: 45,
+            like: -486,
+            image: './assets/img/blog45.jpg',
+            title: 'Phân biệt thẻ Div và Span trong css',
+            time: 'May 19, 2022',
+            description: '...2 thẻ đều có những điểm tương đồng mà nhiều người lầm tưởng rằng chúng khá giống và có thể dùng thay thế cho nhau nhưng thực chất không phải vậy...'
         }
         
     ],
