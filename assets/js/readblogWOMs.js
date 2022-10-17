@@ -150,6 +150,11 @@ function opendetail(index) {
             $('.musicblog28').play();
             $('.musicblog28').volume = 0.02;
             break;
+        case 29:
+            $('.blog__detail-29').style.display = 'block';
+            $('.musicblog29').play();
+            $('.musicblog29').volume = 0.02;
+            break;
     }
     
 }
@@ -184,6 +189,7 @@ function liked() {
     $('#like26').style.fontWeight = '900';
     $('#like27').style.fontWeight = '900';
     $('#like28').style.fontWeight = '900';
+    $('#like29').style.fontWeight = '900';
 
 
 
@@ -469,6 +475,14 @@ const app = {
             image: './assets/img/imgWOMs/blog28.jpg',
             title: 'Delayyy!!!',
             time: 'March 13, 2022',
+            description: '......'
+        },
+        {
+            index: 29,
+            like: -525,
+            image: './assets/img/imgWOMs/blog29.png',
+            title: 'Hết bừa bộn',
+            time: 'October 19, 2022',
             description: '......'
         }
     ],
