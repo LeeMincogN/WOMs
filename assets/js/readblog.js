@@ -237,6 +237,11 @@ function opendetail(index) {
             $('.musicblog45').play();
             $('.musicblog45').volume = 0.02;
             break;
+        case 46:
+            $('.blog__detail-46').style.display = 'block';
+            $('.musicblog46').play();
+            $('.musicblog46').volume = 0.02;
+            break;
     }
     
 }
@@ -288,6 +293,7 @@ function liked() {
     $('#like43').style.fontWeight = '900';
     $('#like44').style.fontWeight = '900';
     $('#like45').style.fontWeight = '900';
+    $('#like46').style.fontWeight = '900';
 
 
 }
@@ -683,7 +689,7 @@ const app = {
         },
         {
             index: 44,
-            like: -375,
+            like: -275,
             image: './assets/img/blog43.png',
             title: 'Năm cách để ẩn các phần tử trong CSS (Phần 2)',
             time: 'April 19, 2022',
@@ -691,11 +697,19 @@ const app = {
         },
         {
             index: 45,
-            like: -486,
+            like: -386,
             image: './assets/img/blog45.jpg',
             title: 'Phân biệt thẻ Div và Span trong css',
             time: 'May 19, 2022',
             description: '...2 thẻ đều có những điểm tương đồng mà nhiều người lầm tưởng rằng chúng khá giống và có thể dùng thay thế cho nhau nhưng thực chất không phải vậy...'
+        },
+        {
+            index: 46,
+            like: -600,
+            image: './assets/img/blog46.jpg',
+            title: 'Toán tử ++ và --',
+            time: 'October 19, 2022',
+            description: '...nghe qua thì rất dễ hiểu, nhưng để hiểu nguyên lý về cách hoạt động của nó chúng ta sẽ phải mất thêm một chút thời gian...'
         }
         
     ],
