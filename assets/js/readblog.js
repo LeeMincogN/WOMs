@@ -705,7 +705,7 @@ const app = {
         },
         {
             index: 46,
-            like: -600,
+            like: -541,
             image: './assets/img/blog46.jpg',
             title: 'Toán tử ++ và --',
             time: 'October 19, 2022',

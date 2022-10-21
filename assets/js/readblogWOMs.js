@@ -479,7 +479,7 @@ const app = {
         },
         {
             index: 29,
-            like: -525,
+            like: -465,
             image: './assets/img/imgWOMs/blog29.png',
             title: 'Hết bừa bộn',
             time: 'October 19, 2022',
