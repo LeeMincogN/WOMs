@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 566
+var count = 610
 
 
 //renderBlog 
@@ -155,6 +155,11 @@ function opendetail(index) {
             $('.musicblog29').play();
             $('.musicblog29').volume = 0.02;
             break;
+        case 30:
+            $('.blog__detail-30').style.display = 'block';
+            $('.musicblog30').play();
+            $('.musicblog30').volume = 0.02;
+            break;
     }
     
 }
@@ -190,6 +195,7 @@ function liked() {
     $('#like27').style.fontWeight = '900';
     $('#like28').style.fontWeight = '900';
     $('#like29').style.fontWeight = '900';
+    $('#like30').style.fontWeight = '900';
 
 
 
@@ -483,6 +489,14 @@ const app = {
             image: './assets/img/imgWOMs/blog29.png',
             title: 'Hết bừa bộn',
             time: 'October 19, 2022',
+            description: '......'
+        },
+        {
+            index: 30,
+            like: -561,
+            image: './assets/img/imgWOMs/blog30.png',
+            title: 'Tiệc chia tay',
+            time: 'October 23, 2022',
             description: '......'
         }
     ],
