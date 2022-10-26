@@ -485,7 +485,7 @@ const app = {
         },
         {
             index: 29,
-            like: -465,
+            like: -421,
             image: './assets/img/imgWOMs/blog29.png',
             title: 'Hết bừa bộn',
             time: 'October 19, 2022',
@@ -493,7 +493,7 @@ const app = {
         },
         {
             index: 30,
-            like: -561,
+            like: -510,
             image: './assets/img/imgWOMs/blog30.png',
             title: 'Tiệc chia tay',
             time: 'October 23, 2022',
