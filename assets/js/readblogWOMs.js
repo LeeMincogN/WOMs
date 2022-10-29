@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 660
+var count = 675
 
 
 //renderBlog 
@@ -160,6 +160,11 @@ function opendetail(index) {
             $('.musicblog30').play();
             $('.musicblog30').volume = 0.02;
             break;
+        case 31:
+            $('.blog__detail-31').style.display = 'block';
+            $('.musicblog31').play();
+            $('.musicblog31').volume = 0.02;
+            break;
     }
     
 }
@@ -196,6 +201,7 @@ function liked() {
     $('#like28').style.fontWeight = '900';
     $('#like29').style.fontWeight = '900';
     $('#like30').style.fontWeight = '900';
+    $('#like31').style.fontWeight = '900';
 
 
 
@@ -497,6 +503,14 @@ const app = {
             image: './assets/img/imgWOMs/blog30.png',
             title: 'Tiệc chia tay',
             time: 'October 23, 2022',
+            description: '......'
+        },
+        {
+            index: 31,
+            like: -612,
+            image: './assets/img/imgWOMs/blog31.png',
+            title: 'Bored',
+            time: 'October 29, 2022',
             description: '......'
         }
     ],
