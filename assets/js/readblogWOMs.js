@@ -507,7 +507,7 @@ const app = {
         },
         {
             index: 31,
-            like: -612,
+            like: -556,
             image: './assets/img/imgWOMs/blog31.png',
             title: 'Bored',
             time: 'October 29, 2022',
