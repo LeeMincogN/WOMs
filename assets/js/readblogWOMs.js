@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 675
+var count = 742
 
 
 //renderBlog 
@@ -499,7 +499,7 @@ const app = {
         },
         {
             index: 30,
-            like: -510,
+            like: -489,
             image: './assets/img/imgWOMs/blog30.png',
             title: 'Tiệc chia tay',
             time: 'October 23, 2022',
