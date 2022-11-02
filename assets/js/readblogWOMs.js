@@ -491,7 +491,7 @@ const app = {
         },
         {
             index: 29,
-            like: -421,
+            like: -384,
             image: './assets/img/imgWOMs/blog29.png',
             title: 'Hết bừa bộn',
             time: 'October 19, 2022',
@@ -499,7 +499,7 @@ const app = {
         },
         {
             index: 30,
-            like: -489,
+            like: -426,
             image: './assets/img/imgWOMs/blog30.png',
             title: 'Tiệc chia tay',
             time: 'October 23, 2022',
@@ -507,7 +507,7 @@ const app = {
         },
         {
             index: 31,
-            like: -556,
+            like: -499,
             image: './assets/img/imgWOMs/blog31.png',
             title: 'Bored',
             time: 'October 29, 2022',

@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 520
+    var count = 679
 
 //renderBlog 
 function opendetail(index) {
@@ -126,6 +126,11 @@ function opendetail(index) {
             $('.musicblog22').play();
             $('.musicblog22').volume = 0.02;
             break;
+        case 23:
+            $('.blog__detail-23').style.display = 'block';
+            $('.musicblog23').play();
+            $('.musicblog23').volume = 0.02;
+            break;
     }
     
 }
@@ -154,6 +159,7 @@ function liked() {
     $('#like20').style.fontWeight = '900';
     $('#like21').style.fontWeight = '900';
     $('#like22').style.fontWeight = '900';
+    $('#like23').style.fontWeight = '900';
 
 
 
@@ -396,6 +402,14 @@ const app = {
             time: 'May 3, 2022',
             description: ''
         },
+        {
+            index: 23,
+            like: -524,
+            image: './assets/img/imgWomusic/blog23.png',
+            title: 'vaicaunoicokhiennguoithaydoi (Guitar mix by me)',
+            time: 'November 2, 2022',
+            description: ''
+        }
     ],
     render: function() {
         const htmls = this.blogs.map(function(blog) {
