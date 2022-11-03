@@ -404,7 +404,7 @@ const app = {
         },
         {
             index: 23,
-            like: -524,
+            like: -475,
             image: './assets/img/imgWomusic/blog23.png',
             title: 'vaicaunoicokhiennguoithaydoi (Guitar mix by me)',
             time: 'November 2, 2022',
