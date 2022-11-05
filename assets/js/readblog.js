@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 798
+var count = 812
 
 
 
@@ -242,6 +242,11 @@ function opendetail(index) {
             $('.musicblog46').play();
             $('.musicblog46').volume = 0.02;
             break;
+        case 47:
+            $('.blog__detail-47').style.display = 'block';
+            $('.musicblog47').play();
+            $('.musicblog47').volume = 0.02;
+            break;
     }
     
 }
@@ -294,6 +299,7 @@ function liked() {
     $('#like44').style.fontWeight = '900';
     $('#like45').style.fontWeight = '900';
     $('#like46').style.fontWeight = '900';
+    $('#like47').style.fontWeight = '900';
 
 
 }
@@ -705,11 +711,19 @@ const app = {
         },
         {
             index: 46,
-            like: -541,
+            like: -491,
             image: './assets/img/blog46.jpg',
             title: 'Toán tử ++ và --',
             time: 'October 19, 2022',
             description: '...nghe qua thì rất dễ hiểu, nhưng để hiểu nguyên lý về cách hoạt động của nó chúng ta sẽ phải mất thêm một chút thời gian...'
+        },
+        {
+            index: 47,
+            like: -751,
+            image: './assets/img/blog47.jpeg',
+            title: 'Object constructor',
+            time: 'November 5, 2022',
+            description: '...Như bạn có thể thấy, hàm Color constructor chỉ đơn thuần là lấy các tham số của nó và gắn chúng vào this object. Khi hàm dựng / hàm tạo (constructor) được gọi bởi từ khóa new, sẽ trả về một object mới là this của constructor này....'
         }
         
     ],
