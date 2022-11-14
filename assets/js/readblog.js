@@ -719,7 +719,7 @@ const app = {
         },
         {
             index: 47,
-            like: -751,
+            like: -690,
             image: './assets/img/blog47.jpeg',
             title: 'Object constructor',
             time: 'November 5, 2022',
