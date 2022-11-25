@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 742
+var count = 800
 
 
 //renderBlog 
@@ -165,6 +165,11 @@ function opendetail(index) {
             $('.musicblog31').play();
             $('.musicblog31').volume = 0.02;
             break;
+        case 32:
+            $('.blog__detail-32').style.display = 'block';
+            $('.musicblog32').play();
+            $('.musicblog32').volume = 0.02;
+            break;
     }
     
 }
@@ -202,6 +207,7 @@ function liked() {
     $('#like29').style.fontWeight = '900';
     $('#like30').style.fontWeight = '900';
     $('#like31').style.fontWeight = '900';
+    $('#like32').style.fontWeight = '900';
 
 
 
@@ -511,6 +517,14 @@ const app = {
             image: './assets/img/imgWOMs/blog31.png',
             title: 'Bored',
             time: 'October 29, 2022',
+            description: '......'
+        },
+        {
+            index: 32,
+            like: -742,
+            image: './assets/img/imgWOMs/blog32.png',
+            title: 'Safetyyy!!!',
+            time: 'November 25, 2022',
             description: '......'
         }
     ],
