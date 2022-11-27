@@ -521,7 +521,7 @@ const app = {
         },
         {
             index: 32,
-            like: -742,
+            like: -694,
             image: './assets/img/imgWOMs/blog32.png',
             title: 'Safetyyy!!!',
             time: 'November 25, 2022',
