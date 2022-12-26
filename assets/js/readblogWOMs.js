@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 800
+var count = 912
 
 
 //renderBlog 
@@ -170,6 +170,11 @@ function opendetail(index) {
             $('.musicblog32').play();
             $('.musicblog32').volume = 0.02;
             break;
+        case 33:
+            $('.blog__detail-33').style.display = 'block';
+            $('.musicblog33').play();
+            $('.musicblog33').volume = 0.02;
+            break;
     }
     
 }
@@ -208,6 +213,7 @@ function liked() {
     $('#like30').style.fontWeight = '900';
     $('#like31').style.fontWeight = '900';
     $('#like32').style.fontWeight = '900';
+    $('#like33').style.fontWeight = '900';
 
 
 
@@ -521,10 +527,18 @@ const app = {
         },
         {
             index: 32,
-            like: -694,
+            like: -605,
             image: './assets/img/imgWOMs/blog32.png',
             title: 'Safetyyy!!!',
             time: 'November 25, 2022',
+            description: '......'
+        },
+        {
+            index: 33,
+            like: -800,
+            image: './assets/img/imgWOMs/blog33.png',
+            title: 'Mery Chirstmas',
+            time: 'December 25, 2022',
             description: '......'
         }
     ],
