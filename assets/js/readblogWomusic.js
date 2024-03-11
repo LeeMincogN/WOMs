@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 679
+    var count = 850
 
 //renderBlog 
 function opendetail(index) {
@@ -160,9 +160,6 @@ function liked() {
     $('#like21').style.fontWeight = '900';
     $('#like22').style.fontWeight = '900';
     $('#like23').style.fontWeight = '900';
-
-
-
 }
 
 //Đặt text title welcome
@@ -214,10 +211,6 @@ function fullscreen() {
         $('.videoUpdate').msRequestFullscreen();
     }
   }
-
-
-
-
 
 
 
