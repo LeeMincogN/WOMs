@@ -251,7 +251,7 @@ function opendetail(index) {
     
 }
 
-//
+// hàm font like
 function liked() {
     $('#like1').style.fontWeight = '900';
     $('#like2').style.fontWeight = '900';
@@ -300,8 +300,6 @@ function liked() {
     $('#like45').style.fontWeight = '900';
     $('#like46').style.fontWeight = '900';
     $('#like47').style.fontWeight = '900';
-
-
 }
 
 //Đặt text title welcome
