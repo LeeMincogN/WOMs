@@ -8,7 +8,7 @@ const $$ = document.querySelectorAll.bind(document);
     //     }
     // }
 
-    var count = 410
+    var count = 550
 
 //renderBlog 
 function opendetail(index) {
