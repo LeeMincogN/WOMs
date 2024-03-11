@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-var count = 912
+var count = 2050
 
 
 //renderBlog 
@@ -13,7 +13,6 @@ function opendetail(index) {
             $('.blog__detail-1').style.display = 'block';
             $('.musicblog1').play();
             $('.musicblog1').volume = 0.02;
-            
             break;
         case 2:
             $('.blog__detail-2').style.display = 'block';
